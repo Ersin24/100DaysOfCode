@@ -1,4 +1,4 @@
-** 100 Days Of Code
+# 100 Days Of Code
 
-* Day 1
+## Day 1
 > index.html dosyası oluşturuldu
