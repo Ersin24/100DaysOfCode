@@ -1,0 +1,45 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(85, 1, 133);
+  font-size: 45px;
+  margin: 12px 0;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(85, 1, 133);
+}
+
+#description {
+  margin-bottom: 38px;
+}
+
+ol {
+  list-style: none;
+  margin: 30px auto 0 auto;
+}
+
+a {
+  background-color: rgb(180, 179, 80);
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 12px 48px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgb(136, 48, 48);
+}
+
+a:hover {
+  background-color: rgb(243, 1, 185);
+}
+
+li {
+  background-color: rgb(185, 180, 225);
+  margin: 12px;
+  padding: 18px 0;
+}
+
+.daily-goal{
+  margin: 12px;
+  color: blue;
+}
