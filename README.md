@@ -95,3 +95,7 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Inline elementlerde herhangi bir margin işlevini kabul etmez. Eğer padding verirsek taşma meydana gelir. Bunu display property ile çözebiliriz. Inline-block ile padding margin verebiliriz. Anchor tagının özelliklerini de taşır bu arada
 
+## Day9-10
+
+> First project added
+
