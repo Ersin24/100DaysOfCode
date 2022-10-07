@@ -106,3 +106,8 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 > Favicon generetors ile normal bir resmi favicona çevirdik ve link ile include ettik
 
 > "/" Server'da bunu kullanacağız
+
+## Day12
+
+> Command Line Interface (CLI) vs Graphical User Interface (GUI) ayrımında bizim cli tarafında yazdığımızı öğrendik. Windows tarafındaki cmd ekranı. 
+
