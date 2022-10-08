@@ -106,3 +106,45 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 > Favicon generetors ile normal bir resmi favicona çevirdik ve link ile include ettik
 
 > "/" Server'da bunu kullanacağız
+
+## Day12
+
+> Command Line Interface (CLI) vs Graphical User Interface (GUI) ayrımında bizim cli tarafında yazdığımızı öğrendik. Windows tarafındaki cmd ekranı. 
+
+> **del** komutu siliyor 
+>**mkdir** yeni klasör oluşturuyor
+>**rmdir** klasör siliyor
+> **git --version** ile git versiyonunu görebiliriz
+> **git init** ile initial ediyoruz
+> **git status** bize son andaki snapshot hakkında bilgi veriyor
+> **git add ...** ile untracked durumdan tracked duruma çekiyoruz
+> **git commit -m  *..."** -m olan commit messajı
+> **git config --global --edit** diyerek name ve email kısımlarını değiştirebiliyoruz. Bunu yaptıktan sonra **:x** diyerek çıkabiliriz.
+> **git config --global user.name "Ersin göç"** diyerek username değiştirebiliriz
+> **git config --global user.name** bize username adını gösterir
+> **git config --global user.email "ersin_1229@hotmail.com"** diyerek username değiştirebiliriz
+> **git config --global user.email** diyerek email adını değiştirebiliriz
+> **cls** ve **clear** command ekranını temizler
+> **git log** log kayıtlarını görüyoruz
+> **git add text1 text2 text3** diyerek çoklu **git add .** tek seferde yapabiliriz
+> Buralarda git statusu çok kullanıyoruz çünkü neler yaptığımızı görmek için
+
+## Day13
+
+> **git branch** hangi branchta olduğumuzu gösteriyor. Aynı zamanda git status ile de bunu görebiliyoruz. Default olarak **master** geliyor ve bizim bunu değiştirmemiz lazım. **git branch -m main** ile main adında branch açabiliriz.
+
+> **git checkout -b feature** dersek feature adında yeni bir branch açıyoruz ve ona geçiyoruz. git branch dersek ya da status dersek görüyoruz yine
+
+> **git add .** tüm yeni oluşumları ekler
+
+> **git merge branchAdı** dersek bulunduğumuz branch ile yazdığımız branch adını birleştirir. commitleri ve eğer dosya varsa onları da birleştirir getirir. Bunu tek seferde yapıp bitirmiyoruz. Örneğin feature branch'tayken yeni commit yaptık sonra main branchına geçip feature branchını merge ettik diyelim. Bundan sonra tekrar feeature konumuna gidersek tekrar yeni bir şey eklersek otomatik olarak bunu main branchı ÇEKMEZ! Biz yine merge etmemiz gerek dosyalar ve commitler için
+
+## Deleting
+
+> **git rm dosyaAdi** ile aynı dizinde bulunmak şartıyla bir dosyayı silebiliriz. 
+
+> **git reset --hard HEAD~1** son yapılan değişkliği geri alır. Eğer 1 yerine 2 yazarsak son yapılan 2 değişikliği geri alır. Ayrıca bunu yapmak için git add ve git commit yapılması gerekir. Aksi halde en son ne zaman yapıldıysa ta oraya kadar gidecektir. 
+
+> **git branch -D feautre** feature isimli branchı siler.
+
+> 
