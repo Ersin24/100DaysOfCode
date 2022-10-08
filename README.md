@@ -147,4 +147,6 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > **git branch -D feautre** feature isimli branchı siler.
 
-> 
+> **git checkout -- .** Bu eğer bir değişiklik yaptık ve bunu commit etmemiş haldeyken geri almak istersek (ctrl + z gibi) kullanıyoruz.
+
+> **git reset README.md** ==> yeni bir şeyler ekedik ve bunu git add yaptık. Ama sonrasında geri almak istiyoruz. Hangi dosyadaysak o dosyanın adını yazarak git add olmadan önceki haline döndürüyoruz. Hatta bunun üstüne **git checkout -- .** yaparsak en son commit edilmiş yapıya da geri döneriz.
