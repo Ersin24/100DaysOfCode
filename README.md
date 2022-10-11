@@ -145,8 +145,14 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > **git reset --hard HEAD~1** son yapılan değişkliği geri alır. Eğer 1 yerine 2 yazarsak son yapılan 2 değişikliği geri alır. Ayrıca bunu yapmak için git add ve git commit yapılması gerekir. Aksi halde en son ne zaman yapıldıysa ta oraya kadar gidecektir. 
 
-> **git branch -D feautre** feature isimli branchı siler.
+> **git branch -D feautre** feature(özellik) isimli branchı siler.
 
 > **git checkout -- .** Bu eğer bir değişiklik yaptık ve bunu commit etmemiş haldeyken geri almak istersek (ctrl + z gibi) kullanıyoruz.
 
 > **git reset README.md** ==> yeni bir şeyler ekedik ve bunu git add yaptık. Ama sonrasında geri almak istiyoruz. Hangi dosyadaysak o dosyanın adını yazarak git add olmadan önceki haline döndürüyoruz. Hatta bunun üstüne **git checkout -- .** yaparsak en son commit edilmiş yapıya da geri döneriz.
+
+## Day14
+
+> **git clone --urladres-- .** Bulunduğumuz dizine kopyalıyoruz projeyi
+
+> [git-scm](https://git-scm.com) veya [github](https://github.com)  bu araçlar hakkında daha fazla bilgi edinmek için bakabiliriz.
