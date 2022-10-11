@@ -95,11 +95,11 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Inline elementlerde herhangi bir margin işlevini kabul etmez. Eğer padding verirsek taşma meydana gelir. Bunu display property ile çözebiliriz. Inline-block ile padding margin verebiliriz. Anchor tagının özelliklerini de taşır bu arada
 
-## Day9-10
+## Day 9-10
 
 > First project added
 
-## Day11
+## Day 11
 
 > Netlify drop üzerinden ücretsiz yayına aldık 
 
@@ -107,7 +107,7 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > "/" Server'da bunu kullanacağız 
 
-## Day12
+## Day 12
 
 > Command Line Interface (CLI) vs Graphical User Interface (GUI) ayrımında bizim cli tarafında yazdığımızı öğrendik. Windows tarafındaki cmd ekranı. 
 
@@ -129,7 +129,7 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 > **git add text1 text2 text3** diyerek çoklu **git add .** tek seferde yapabiliriz
 > Buralarda git statusu çok kullanıyoruz çünkü neler yaptığımızı görmek için
 
-## Day13
+## Day 13
 
 > **git branch** hangi branchta olduğumuzu gösteriyor. Aynı zamanda git status ile de bunu görebiliyoruz. Default olarak **master** geliyor ve bizim bunu değiştirmemiz lazım. **git branch -m main** ile main adında branch açabiliriz.
 
@@ -151,8 +151,11 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > **git reset README.md** ==> yeni bir şeyler ekedik ve bunu git add yaptık. Ama sonrasında geri almak istiyoruz. Hangi dosyadaysak o dosyanın adını yazarak git add olmadan önceki haline döndürüyoruz. Hatta bunun üstüne **git checkout -- .** yaparsak en son commit edilmiş yapıya da geri döneriz.
 
-## Day14
+## Day 14
 
 > **git clone --urladres-- .** Bulunduğumuz dizine kopyalıyoruz projeyi
 
 > [git-scm](https://git-scm.com) veya [github](https://github.com)  bu araçlar hakkında daha fazla bilgi edinmek için bakabiliriz.
+
+## Day 15
+
