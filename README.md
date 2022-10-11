@@ -105,7 +105,7 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Favicon generetors ile normal bir resmi favicona çevirdik ve link ile include ettik
 
-> "/" Server'da bunu kullanacağız
+> "/" Server'da bunu kullanacağız 
 
 ## Day12
 
