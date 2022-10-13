@@ -159,3 +159,8 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 ## Day 15
 
+> **display: flex** ile bir parent olan elementte flex yapısını oluşturuyoruz
+> **flex-direction**  ile hangi yönde olması gerektiğini söylüyoruz. column -> aşağı doğru row -> soldan sağa doğru bir eksen.
+> **flex-wrap**  -> genişlik verilmediğinde geçerli. Elementler ekran küçüldüğünde sarmalansın mı yoksa sarmalanmasın mı yapısı. wrap -> sarmala nowrap -> sarmalama
+> **align-items** -> dikeyde nasıl davranacağı
+> **justify-content** -> yatayda nasıl davranacağı

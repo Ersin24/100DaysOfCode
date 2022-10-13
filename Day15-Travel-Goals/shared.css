@@ -3,10 +3,37 @@ body {
     margin: 0;
 }
 
+#container {
+    background-color: rgb(82, 23, 81);
+    padding: 10px;
+    /* width: 600px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    background-color: rgb(211, 88, 209);
+    margin: 10px;
+    width: 250px;
+}
+
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
+    width: 250px;
+    background-color: rgb(211, 88, 209);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    width: 100px;
+    background-color: rgb(238, 212, 192);
 }
 
 #page-logo a {
@@ -15,6 +42,7 @@ ul {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #000;
     color: rgb(207, 207, 70);
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Charm', cursive;
 }
+
