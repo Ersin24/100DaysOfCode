@@ -164,3 +164,10 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 > **flex-wrap**  -> genişlik verilmediğinde geçerli. Elementler ekran küçüldüğünde sarmalansın mı yoksa sarmalanmasın mı yapısı. wrap -> sarmala nowrap -> sarmalama
 > **align-items** -> dikeyde nasıl davranacağı
 > **justify-content** -> yatayda nasıl davranacağı
+
+## Day 16
+
+> **background-image**
+> **background-size** - cover
+> **background-position** - center
+> **margin: 0 auto** width verilmişse ortalar

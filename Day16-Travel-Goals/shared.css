@@ -1,0 +1,40 @@
+body {
+    font-family: 'David Libre', serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+#page-logo a {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    color: rgb(207, 207, 70);
+    font-size: 30px;
+    font-family: 'Charm', cursive;
+}
+
+
+

@@ -1,0 +1,49 @@
+#hero {
+    height: 800px;
+    background-image: url("/Day16-Travel-Goals/images/places/ocean.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-content {
+    width: 900px;
+    background-color: rgba(51, 47, 47, 0.8);
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(75, 75, 75, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    top: 200px;
+}
+
+#hero-content h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+}
+
+#hero-content p {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+#hero-content a {
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(255, 251, 0);
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 2px 4px 8px rgb(65, 65, 65);
+}
+
+#hero-content a:hover {
+    background-color: rgb(255, 238, 0);
+}
