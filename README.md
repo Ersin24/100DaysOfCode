@@ -168,6 +168,29 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 ## Day 16
 
 > **background-image**
+
 > **background-size** - cover
+
 > **background-position** - center
+
 > **margin: 0 auto** width verilmişse ortalar
+
+> Bir elemanı sağa sola üste alta taşıma istiyorsak block bir element içindeki blok elemente **position: relative;** vermeliyiz. Örneğin artık **top: 20px;** dediğimizde üstten 20px ittirildiğini göreceğiz.
+
+> **Position: absolute** verdiğimizde ise elemenın inline element gibi davrandığını görürüz ve sonraki gelen eleman bunu yokmuş gibi yanına konumlandırarak davranır.
+
+## Day 17 (Önemli noktalar var)
+
+> Position absolut dediğimizde html tagına göre konumlandırma yapıyor kendisini. Bunu width 100% ile destekliyoruz ve sonrasında çıkacak hatayı da box-sizing border box ile çözüyoruz. Tam oturması için **top: 0; left: 0;** da veriyoruz
+
+> **box-sizing: border-box;** yapısını gördük. 
+
+> **object-fit: cover;** ile resimdeki genişliği komple sağlıyoruz
+
+## Day 18
+
+> childtaki margin hatasını parent'a padding vererek çözdük
+
+> **background: lineer-gradient(..deg, rgb(), rgb())** arka planı geçişli yaptık. 0, 45, 90, 135, 180 gibi 45'lik özel kodlar verebiliriz
+
+> Override olayını tekrar **position: static;** ile çözdük
