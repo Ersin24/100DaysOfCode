@@ -194,3 +194,29 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 > **background: lineer-gradient(..deg, rgb(), rgb())** arka planı geçişli yaptık. 0, 45, 90, 135, 180 gibi 45'lik özel kodlar verebiliriz
 
 > Override olayını tekrar **position: static;** ile çözdük
+
+## Day 20
+
+> Izgara yapısını oluşturmak için öncelikle **display: grid;** veriyoruz
+
+> Ardından sütunda ayrılması için **grid-template-columns: 1fr 1fr;** gibi ölçüm yapıyoruz
+
+> Ardından gridler arasındaki boşluğu oluşturmak için **gap: 20px 20px** gibi değer veriyoruz
+
+> Özel olarak grid almış olan bir li etiketini düzeltmek için 
+**li:nth-of-type(3) {  grid-column: 1 / span 2; }** yapısını kullanıyoruz
+
+> [Unicode Carakter Seti](https://en.wikipedia.org/wiki/Arrows_(Unicode_block)) 
+
+> [Position Property](https://academind.com/tutorials/the-position-property/) 
+
+> [Flexbox container](https://academind.com/tutorials/flexbox-basics-container/) 
+
+> [Flexbox item](https://academind.com/tutorials/flexbox-flex-items/) 
+
+> [Comparing Flexbox and the Grid](https://academind.com/tutorials/css-grid-vs-flexbox/) 
+
+
+## Day 21
+
+> Artık html etiketlerinde *article* da kullanıyoruz
