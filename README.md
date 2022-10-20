@@ -221,4 +221,21 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Artık html etiketlerinde *article* da kullanıyoruz
 
-> Pixel ölçeklenebilir değil. & em ve rem kullanabiliriz.
+> Pixel ölçeklenebilir değil. % em ve rem kullanabiliriz.
+
+## Day 22
+
+> % verdiğimizde örneğin parent eleman 40px ise ve child elemanda %200 vermiş ise font size 'a bize dönecek değer 80px olur. Eğer vermez isek default olan değer tarayıcının değerine göre ölçeklenir. Tarayıcının değerini görmek için ise En sağda 3 noktadan ayarlar sonrasında Görünüm (view) buradaki yazı tipi boyutu 16px e göre şekil alır. Değiştiğini görmek için burada oynamalar yapabiliriz
+
+> **em** de yüzde gibi relative behaves for the parent element. font-size a göre şekillenir.
+
+> **rem** ise asıl kullanacağımız property. Buna göre **rem** root elemente göre behaves. Browser settings ' e göre always relative behaves. When html element font-size give the for example 24px. Roota göre şekillenir. 16px ' e göre şekillenir
+
+## Day 23
+
+### *Desktop First* vs *Mobile First* 
+
+> Desktop max-width with started. Geriye doğru gider. Mobile first mind-width ile başlar maximuma kadar gider.
+
+> smartphone - 480px, tablet - 768px, notebook - 1024px, desktop computer 1200px, tv - >1200px
+
