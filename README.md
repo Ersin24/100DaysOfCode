@@ -220,3 +220,5 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 ## Day 21
 
 > Artık html etiketlerinde *article* da kullanıyoruz
+
+> Pixel ölçeklenebilir değil. & em ve rem kullanabiliriz.
