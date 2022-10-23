@@ -239,3 +239,22 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > smartphone - 480px, tablet - 768px, notebook - 1024px, desktop computer 1200px, tv - >1200px
 
+## Day 24
+
+***3 şeyi hatırla***
+
+1. Adım adım farklı özellikler ekleyin
+2. Aktarılması gereken temel bilgiler hakkında düşünün
+3. Web sitenizi aşırı şekillendirmeyin
+
+***Boyutlandırma***
+
+> Örnek olarak [stripe com](https://www.stripe.com)
+
+> Merkezi genelde ortala sağdan soldan boşluklar bırak bütün alanı kullanma.
+
+> cardDeailts projesinde başlık için serif diğer yazı tipleri için sans serif yazı tipini kullandık. ayrıca button price için ayrı bir yazı ağırlığı mevcut
+
+> Gri tonu her zaman kullanacağız ve her zaman sayfalar için gereklidir. Örneğin h1 kullanırken bile color kullanacağız ve saf siyah yerine biraz daha gri tonu kullanacağız böylelikle daha profesyonel görüntüye geçmiş oluyor. Ayrıca bir tane ana renk seçeceğiz.
+
+> 
