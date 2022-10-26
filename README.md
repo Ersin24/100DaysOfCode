@@ -257,4 +257,17 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Gri tonu her zaman kullanacağız ve her zaman sayfalar için gereklidir. Örneğin h1 kullanırken bile color kullanacağız ve saf siyah yerine biraz daha gri tonu kullanacağız böylelikle daha profesyonel görüntüye geçmiş oluyor. Ayrıca bir tane ana renk seçeceğiz.
 
-> 
+## Day 25 (Öneriler devamı)
+
+> Font size, font weight, color çok önemli. Örneğin html etiketinin backgroundunu çok açık gri tonlarında kullanırken vurgulayacağız metindeki yerleri daha koyu tonda uyguluyoruz ve font size ve font weight verebiliyoruz. 
+
+> Html elementinin içerisinde css değişkenlerini yazıyoruz. Örneğin *--color-gray-100: rgb(233,233,2330)* dediğimizde sonrasında bu rengi çağırmak için **var(--color-gray-100)** dememiz gerekiyor. Aynı şekilde font size 'ı da böyle değişkene aktarabiliriz.
+
+> **html**, **:root** ve  * etiketlerine baktık
+
+> **transformation** - Elementin görünümünü değiştirmek veya taşımak. Ör. üzerine geldiğinde hover efekti. Örneğin **transform: scale(2)** dediğimizde 2 kat büyüklüğüne çıkacak ya da **transform: rotate(180deg)** dediğimizde ters dönecektir.
+
+> **transition** - Başlangı. durumundan bir başka duruma yumuşak geçiş yapımı. **transition: transform 0.5s ease-out 2s** dediğimizde başka yerde hover da transform verdiğimizde bu çalışacaktır. Sondaki gecikme ortadaki süresi
+
+> [Svg Dökümantasyon](htttps://www.heroicons.dev) ile svg ücretsiz güzel dosyaları görebiliyoruz. Bunu kullanabiliriz.
+
