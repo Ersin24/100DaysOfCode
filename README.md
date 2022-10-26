@@ -269,5 +269,13 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > **transition** - Başlangı. durumundan bir başka duruma yumuşak geçiş yapımı. **transition: transform 0.5s ease-out 2s** dediğimizde başka yerde hover da transform verdiğimizde bu çalışacaktır. Sondaki gecikme ortadaki süresi
 
-> [Svg Dökümantasyon](htttps://www.heroicons.dev) ile svg ücretsiz güzel dosyaları görebiliyoruz. Bunu kullanabiliriz.
+> [Svg Dökümantasyon](https://www.heroicons.dev) ile svg ücretsiz güzel dosyaları görebiliyoruz. Bunu kullanabiliriz.
+
+## Day 26
+
+> Formlar: **contact form**, **checkout form**, **login form** ve **comment form** için önemli yere sahipler
+
+> **<input type=''>** ile (text, number, email), **<textarea>** ile multi-line text input field, **<select>** dropdown multiple-choice or multi-select input, **<button>** reset ya da submit yaptığımız form.
+
+> **POST** istekleri gönderilen tüm veriler talebin kendisinin bir parçası olacaktır. **GET** ise amaç veri göndermek değildir. Ayrıca url ye eklenir.  Ayrıca server'a gönderirken name değerini eklemeyi unutmuyoruz.
 
