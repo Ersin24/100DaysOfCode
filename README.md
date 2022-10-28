@@ -279,3 +279,13 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > **POST** istekleri gönderilen tüm veriler talebin kendisinin bir parçası olacaktır. **GET** ise amaç veri göndermek değildir. Ayrıca url ye eklenir.  Ayrıca server'a gönderirken name değerini eklemeyi unutmuyoruz.
 
+## Day 27
+
+> **label** etiketi ve *for* attribute bakıldı. Bunun için inputa id verildi
+
+> *buttonlara* ve *inputlara* özel font family verilmesi gerek yoksa default değeri çekiyor. Buttona gelip **font: inherit** dersek bütün yukardan gelen değerleri çeker. Eğer body'e bir şey veriyorsak body'den çeker.
+
+> *input:focus* öğrendik
+
+> 
+
