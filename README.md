@@ -285,7 +285,19 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > *buttonlara* ve *inputlara* özel font family verilmesi gerek yoksa default değeri çekiyor. Buttona gelip **font: inherit** dersek bütün yukardan gelen değerleri çeker. Eğer body'e bir şey veriyorsak body'den çeker.
 
-> *input:focus* öğrendik
+> *input:focus* öğrendik. *label* *text* *password* *date* *email* *radio*
 
-> 
+## Day 28
+
+> *checkbox* yapıyorsak yine name ve value değerlerini giriyoruz. Eğer value vermezsek işaretlenirse get üzerinden gönderince **on** değerini gönderir.
+
+> **textarea** ile inputa verdiğimiz tüm style'ı yeniden veriyoruz. Kapatma tagı var. 
+
+> **select** ile sarmalayıp **option** ile seçenekleri yaptığımız dropdown menu yaptık
+
+> Formu semantiğe çevirdik header main section ile.
+
+> Validation olarak **required** **min** **max** **minlength** **maxlength** parametrelerini gördük. Buna göre tarihte de min ve max verebiliriz. Format 2010-01-10 şeklinde olmalı!
+
+> Textareada kullanmak üzere **rows="8"** gibi değer yaptık ve **placeholder** **value** gibi değerleri gördük
 

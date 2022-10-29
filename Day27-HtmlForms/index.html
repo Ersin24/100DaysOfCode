@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form action="/" method="GET">
+    <form action="/Day27-HtmlForms/" method="GET">
       <label for="username">Your name</label>
       <input type="text" name="user-name" id="username" />
+
+      <label for="usermessage">Your message</label>
+      <textarea name="user-message" id="usermessage"></textarea>
+
       <label for="useremail">Your email address</label>
       <input type="email" name="user-email" id="useremail" />
       <label for="userage">Your Age</label>
@@ -30,18 +34,56 @@
       <input type="password" name="user-password" id="userpassword" />
       <label for="userbirthdate">Your birthdate</label>
       <input type="date" name="user-birthdate" id="userbirthdate" />
+
+      <label for="favoritecolor">Your favorite color?</label>
+      <select name="favorite-color" id="favoritecolor">
+        <option value="blue">My favorite color is blue</option>
+        <option value="black">My favorite color is black</option>
+        <option value="green">My favorite color is green</option>
+      </select>
+
+      <hr />
       <h2>How should we verify your account?</h2>
       <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-text-message" value="text-message">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-text-message"
+          value="text-message"
+        />
         <label for="verify-text-message">Via a text message (SMS)</label>
       </div>
       <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-phone" value="phone">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
         <label for="verify-phone">Via a phone</label>
       </div>
       <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-email" value="email">
+        <input type="radio" name="verify" id="verify-email" value="email" />
         <label for="verify-email">Via an email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms"
+          >Agree to terms?(Şartları kabul ediyor musun?)</label
+        >
+      </div>
+      <div class="form-control-inline">
+        <input
+          type="checkbox"
+          name="contact"
+          id="contact-email"
+          value="email"
+        />
+        <label for="contact-email">Contact me via mail</label>
+      </div>
+      <div class="form-control-inline">
+        <input
+          type="checkbox"
+          name="contact"
+          id="contact-phone"
+          value="phone"
+        />
+        <label for="contact-phone">Contact me via phone</label>
       </div>
       <button>Submit</button>
     </form>
