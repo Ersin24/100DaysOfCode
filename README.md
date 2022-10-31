@@ -321,4 +321,23 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > String ve number değişkenlerine baktık. Değişkenler aslında bir kutudur. Diyelimki bir vergiye ait numaramız var 32 (value) diye. Biz bunu container dediğimiz kutularda yıllarca saklayıp geri çekebiliriz.
 
+## Day30
 
+> Tek tırnak kullanacağız. Tek tırnak içinde yine tek tırnak kullanmak istersek **\** işareti kullanacağız.
+
+> **Alert** , **string**, **number**, **array**, **object**
+
+> Değişkenler: veri kapsayıcıları olarak tanımlayabiliriz. Değişkenler birer anahtar kelimedir. Biz **let** değişkenini kullanıyoruz. Bu sayede yeni bir değişken oluşturduğumuzu tarayıcıya aktarıyoruz. Js tam da bu.
+
+> Değişken isimlerinde camelCase kullanıyoruz ve depoladığımız değişkeni tanımlamalı bu isim
+
+> Tüm js kodu yukarıdan aşağı , soldan sağa doğru yürütülür ve her zaman böyle çalışır.
+
+> Her kodun sonuna mutlaka noktalı virgül koyalım
+
+> Html dosyasını şişirmemek için js kodunu da css kodu gibi dışardan çekiyoruz
+
+> Çoklu verileri saklamak için **array** yapısını kullanıyoruz. Çok fazla veri ve değişken koyabiliriz. İndex 0'dan başlar
+
+> Örneğin pasaportu ele alalım. Burada pasaportta isim yaş ülke cinsiyet gibi çok farklı kalemler tek kişiye ait. Burada bizim ihtiyacımızı karşılayan şey **object**.
+Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa bunları gruplaştırabilir yani nesne oluşturabiliriz. 
