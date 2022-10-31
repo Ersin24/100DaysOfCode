@@ -307,4 +307,18 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > JS' ye giriş yapıldıi
 
-> 
+# JS
+
+> Js ile canlı olarak veri alış verişi yapabiliriz borsa gibi.
+
+> Arka tarafa bir zamanlayıcı atabiliriiz. (internet bankacılığında 5 dakikadan sonra bizi attığı gibi)
+
+> Hata mesajları , kullanıcı doğrulamaları yapabiliriz.
+
+> Syntax programalama dilinde dilbilgisidir.
+
+> Js ile genelde bir şeyleri manipule etmeye çalışırız
+
+> String ve number değişkenlerine baktık. Değişkenler aslında bir kutudur. Diyelimki bir vergiye ait numaramız var 32 (value) diye. Biz bunu container dediğimiz kutularda yıllarca saklayıp geri çekebiliriz.
+
+
