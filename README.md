@@ -299,5 +299,12 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Validation olarak **required** **min** **max** **minlength** **maxlength** parametrelerini gördük. Buna göre tarihte de min ve max verebiliriz. Format 2010-01-10 şeklinde olmalı!
 
-> Textareada kullanmak üzere **rows="8"** gibi değer yaptık ve **placeholder** **value** gibi değerleri gördük
+> Textareada kullanmak üzere **rows="8"** gibi değer yaptık ve **placeholder** **value** gibi değerleri gördük. Textarea için **resize: none;** değerini de koyuyoruz
 
+## Day 29
+
+> Challange tamamlandı
+
+> JS' ye giriş yapıldıi
+
+> 
