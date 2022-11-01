@@ -358,3 +358,4 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Fonksiyonun içinde dışardan gelen değişkeni tutmak yerine artık **return** anahtar kelimesini kullanıyoruz. Artık bu ifade ile her yerden erişebilip farklı işlemlerde de kullanarak esneklik sağlıyoruz. 
 
 > Fonksiyonları daha esnek hale getirmek için parametre göndermeye başladık.
+
