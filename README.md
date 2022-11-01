@@ -359,3 +359,6 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Fonksiyonları daha esnek hale getirmek için parametre göndermeye başladık.
 
+## Day32
+
+> 
