@@ -341,3 +341,20 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Örneğin pasaportu ele alalım. Burada pasaportta isim yaş ülke cinsiyet gibi çok farklı kalemler tek kişiye ait. Burada bizim ihtiyacımızı karşılayan şey **object**.
 Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa bunları gruplaştırabilir yani nesne oluşturabiliriz. 
+
+
+## Day31
+
+> Stringleri bölmek için araya *+* koyabiliriz çok uzunsa. Ya da daha kısa yöntemi backtickler ile yapabiliriz. 
+
+> Amacımız her zamankod okunurluğudur.
+
+> **functions**. Eğer belirli bir işlem yaptığımız kodumuz varsa ve bunu farklı yerlerde tekrar tekrar çağırıyorsak fonksiyonları kullanmamız gerekir. İsim verilirken işlemin ne yaptığı ile alakalı bir isim vermek gerekir. Fonksiyonu tanımladığımızda tarayıcı kendi özel komutumuzu öğrenecek ama bunu henüz yürütmeyecektir. Tarayıcıya ne zaman yürüteceğimizi söylememiz gerek 
+
+> Js tarafından tanımlanan hatalar tarayıcıda consoleda gözüküyor. 
+
+> Fonksiyonun içinde let gibi tanımlama yaparsak orada kullanılır o değişken. O yüzden dışarda tanımlama yapıyoruz. Eğer hem dışarda tanımlama yapıp hem de fonksiyon içinde let tanımlama yaparsak aynı isimle buna **variable shadowing** (değişken gölgeleme) denir. Js buna izin veriyor. Fonksiyon içinde aynı adla yeni bir değişken yaratıyor. 
+
+> Fonksiyonun içinde dışardan gelen değişkeni tutmak yerine artık **return** anahtar kelimesini kullanıyoruz. Artık bu ifade ile her yerden erişebilip farklı işlemlerde de kullanarak esneklik sağlıyoruz. 
+
+> Fonksiyonları daha esnek hale getirmek için parametre göndermeye başladık.
