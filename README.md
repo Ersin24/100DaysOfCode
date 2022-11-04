@@ -275,7 +275,7 @@ This selector selects all elements that meet this "pseudo state" (i.e. all links
 
 > Formlar: **contact form**, **checkout form**, **login form** ve **comment form** için önemli yere sahipler
 
-> **<input type=''>** ile (text, number, email), **<textarea>** ile multi-line text input field, **<select>** dropdown multiple-choice or multi-select input, **<button>** reset ya da submit yaptığımız form.
+> **input type** ile (text, number, email), **textarea** ile multi-line text input field, **select** dropdown multiple-choice or multi-select input, **button** reset ya da submit yaptığımız form.
 
 > **POST** istekleri gönderilen tüm veriler talebin kendisinin bir parçası olacaktır. **GET** ise amaç veri göndermek değildir. Ayrıca url ye eklenir.  Ayrıca server'a gönderirken name değerini eklemeyi unutmuyoruz.
 
@@ -377,5 +377,26 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Stringleri birleştirdik + operatoru ile
 
 > Stringlerde kullanabileceğimiz **string.length** ile stringin tüm karakterlerini bulabiliyoruz. Bir obje değil ama js arkaplanda bunlar yazılmış. aynı zamanda **string.toUpperCase()** de kullanabiliriz
+
+
+## Day 33
+
+> Array'ler de strignler gibi **length** özelliği alıyorlar. Aslında stringlerin array gibi davrandığını söylemek mümkün.
+
+## DOM
+
+> **windows** global nesnesiyle ulaşıyoruz. konsola yazdırdığımızda tüm özellikleri görebiliriz. Buradaki alerti daha önce görmüştük hatta. 
+
+> Document object model. Html etiketleri js ' ye dönüştürülebildiğinden tarayacıda dom ile etkileşime girebiliyor. **document** objesi ile bunları gerçekleştireceğiz. 
+
+> console.log(document) yazınca ve üstüne gelince konsolda bize tüm html etiketini gösteriyor. Document sayfayı temsil ediyor. 
+
+> console.log yerine **console.dir(document)** kullanınca asıl js verilerine bakabiliyoruz.  Burada **meta -> head -> children** ile head de ekli olan verileri görebiliyoruz. yine aynı şekilde **meta -> body -> children** ile de body'deki elemanları görebiliyoruz.
+
+> !!! **Html kodundan önce js kodunu head tarafında yazarsak script tagına *defer* eklememiz gerek!!!** Bu bize kodun ertelenmesi gerektiğini söylüyor. 
+
+> 
+
+
 
 
