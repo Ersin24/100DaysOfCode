@@ -359,8 +359,23 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Fonksiyonları daha esnek hale getirmek için parametre göndermeye başladık.
 
-## Day32
+## Day 32
 
-> burası
+> Nesneler içinde nesneler olabilir.
 
-## day111
+> Nesneler içinde kullandığımız name, price gibi değerler bize **property** olduğunu gösterir. Eğer biz nesne içinde bir fonksiyon tanımlarsak bu **method** olacaktır. Fonksiyon tanımlamasında **function** keywordu yazılmaz!! tıpkı değerleri yazarken başına **let** koymadığımız gibi.
+
+> **console.log** a geçtik alert bıraktık.
+> **void** hiçbir şey döndürmez. (console.log üzerine glediğimizde void yazıyor)
+
+> Matematik işlemlerini gördük. * / + - %
+
+> **Integer** ve ondalıklı olan sayı **floats** gördük.
+
+> number++ number-- gibi değerleri gördük
+
+> Stringleri birleştirdik + operatoru ile
+
+> Stringlerde kullanabileceğimiz **string.length** ile stringin tüm karakterlerini bulabiliyoruz. Bir obje değil ama js arkaplanda bunlar yazılmış. aynı zamanda **string.toUpperCase()** de kullanabiliriz
+
+
