@@ -395,8 +395,17 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > !!! **Html kodundan önce js kodunu head tarafında yazarsak script tagına *defer* eklememiz gerek!!!** Bu bize kodun ertelenmesi gerektiğini söylüyor. 
 
-> 
+## Day 34
 
+> Consol'da yazcağız artık. Auto complete daha güzel de çalışıyor burda. 
 
+> **getElementById** yapısını kullanacağız ve ayrıca bunları hep bir değişkende saklayacağız sonradan kullanmak için
 
+> **querySelectorAll** ya da **querySelector(eşleşen ilk öğe)** ile dom'a erişmeyi öğrendik. 
+
+> !!! **console.dir ile dom'a ulaş**
+
+> Metin içeriğini **textContent** ile a tagının href özelliğini de **href** ile değiştirdik.
+
+> Bir zamanlayıcı sonrası yeni bir eleman eklemek isteyebiliriz. Bu olaylarda yeni bir senerya oluşturuyoruz. **createElement()** ile oluşturuyoruz. **append** ile içine atama yapıyoruz.
 
