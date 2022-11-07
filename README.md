@@ -427,3 +427,12 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Olayları dinlemek için **addEventListener** ile çalışacağız. Öncelikle içeriğe erişeceğiz yine. İki parametre alıyor. İlki mesela *click* ikincisi bizim eriştiğimiz değişkenle alakalı yazdığımız fonksiyon olacak. Burada fonksiyonu açma kapama parantezleri yazmayacağız. Bu her işlev oluştuğunda çalışacak. 
 
 > inputlarda tuş olayı için *input* ile yapacağız. Fonksiyon için de *value* özelliğini kullanacağız. Parametre geçtiğimizde ve bu parametreyi konsola yazdırdığımızda propertyleri görebiliyoruz. Burdan da **even.target.value** ile veriyi çekiyoruz. **Event.data** ile de tek tek verilerin girişinie bakabiliyoruz.
+
+## Day 36
+
+### const
+> Değişkenler yer tutucu kaplardı. Değişkene saklanan değerleri sonradan değiştirebilirdik.**Sabit değişkenler(constants)** sabit değişkenlerdir. *const* ile tanımlanır. Let anahtar sözcüğünün alternatifidir. Asla yeni bir değerle değiştirilemez. Mesela kullanıcı adını asla değişltrimek istemeyebiliriz.Kod güvenliği sağlayabilir. İstenmeyen hataları önleyebilir. Asla değişmeyeceğinden emin olmak gerekir.
+
+### style
+
+> Jsdeki style tanımlamaları camel case kuralına göre yazılmış. **spanElement.className = 'warning'** dersek burada elemanın classı direkt warning olur. Eğer eski class varsa üstüne yazar. Biz bunun yerine **spanElement.classList.add('warning')** dersek üstüne yazacaktır. Kaldırmak istersek **remove** diyeceğiz.
