@@ -407,5 +407,23 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Metin içeriğini **textContent** ile a tagının href özelliğini de **href** ile değiştirdik.
 
+### Create Element DOM
+
 > Bir zamanlayıcı sonrası yeni bir eleman eklemek isteyebiliriz. Bu olaylarda yeni bir senerya oluşturuyoruz. **createElement()** ile oluşturuyoruz. **append** ile içine atama yapıyoruz.
 
+## Day 35
+
+### Delete Element DOM
+
+> Öncelikle elemanı seçeceğiz sonrasında **remove** ile sileceğiz. Eski tarayıcılarda kullanmak için ise **eleman.parentElement.removeChild(eleman)** dememiz gerekiyor.
+
+### Elemanları hareket ettirme
+
+> Var olan elemana parentelement üzerinden append edeceğiz. 
+
+
+> **innerHTML** özelliğini gördük. Daha öncesinde **textContent** ile içeriğe erişmiştik. Arasındaki temel fark textContent sadece düz metin olarak içeriği alır. Bunu consol'a yazdığımızda görüyoruz. innerHTML ise içeriğindeki metin ve varsa html etiketi hepsini hesap ederek alır. Html etikeni de kullanabiliriz. textContent'te düz metin  olarak gösterir etiketleri.
+
+> Olayları dinlemek için **addEventListener** ile çalışacağız. Öncelikle içeriğe erişeceğiz yine. İki parametre alıyor. İlki mesela *click* ikincisi bizim eriştiğimiz değişkenle alakalı yazdığımız fonksiyon olacak. Burada fonksiyonu açma kapama parantezleri yazmayacağız. Bu her işlev oluştuğunda çalışacak. 
+
+> inputlarda tuş olayı için *input* ile yapacağız. Fonksiyon için de *value* özelliğini kullanacağız. Parametre geçtiğimizde ve bu parametreyi konsola yazdırdığımızda propertyleri görebiliyoruz. Burdan da **even.target.value** ile veriyi çekiyoruz. **Event.data** ile de tek tek verilerin girişinie bakabiliyoruz.
