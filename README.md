@@ -436,3 +436,11 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 ### style
 
 > Jsdeki style tanımlamaları camel case kuralına göre yazılmış. **spanElement.className = 'warning'** dersek burada elemanın classı direkt warning olur. Eğer eski class varsa üstüne yazar. Biz bunun yerine **spanElement.classList.add('warning')** dersek üstüne yazacaktır. Kaldırmak istersek **remove** diyeceğiz.
+
+## Day 37 - Advanced JS - Control Structure
+
+> İki yapımız mevcut. 1.cisi **if** 2. ise **loop**. Buna göre şekillendireceğiz. 
+
+> **if () {}** if değerlerinin arasında boolen bir değer olur true or false. Yes mi No mu şeklinde. Direkt true ya da false değerleri verebiliriz her zmana yürütür bunu. 
+
+> If yapılarını karşılaştırma ya da mantıksal operatorler ile birlikte kullanacağız. **Karşılaştırma Operatorleri** *==, ===* eşitlik operatoru,  *>, <, >=, <=* , *!, !=, !==*. **Mantıksal Operatorler** ise *&&* and ve *||* or yapılarıdır. & operatoru |operatorunden onceliklidir. 
