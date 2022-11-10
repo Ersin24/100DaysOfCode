@@ -458,3 +458,9 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > *for in* => **for (const user in users) {console.log(users[user])}** ile verileri çağırabiliriz.
 
 > Sabit bir sayıda veri varsa for döngüsü kullanıyoruz. Şimdi **while** ile sadece bir şartımız var. **while (!isFinished) {isFinished = confirm('Do you want to quit?')}** ile isFinished = true diyerek bir koşul yapabiliriz. Burası bitmeden diğer satırlara geçmez. 
+
+## Day 39 - Loop ile yapılan örnekler
+
+> Bir inputun değerini direkt input.value ile alabiliriz.
+
+> querysSelectorAll bize bir dizi döndürür. Biz bu sayede **for of** döngüsünü kulanabiliririz. 
