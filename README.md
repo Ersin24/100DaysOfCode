@@ -438,9 +438,23 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Jsdeki style tanımlamaları camel case kuralına göre yazılmış. **spanElement.className = 'warning'** dersek burada elemanın classı direkt warning olur. Eğer eski class varsa üstüne yazar. Biz bunun yerine **spanElement.classList.add('warning')** dersek üstüne yazacaktır. Kaldırmak istersek **remove** diyeceğiz.
 
 ## Day 37 - Advanced JS - Control Structure
-
+### IF
 > İki yapımız mevcut. 1.cisi **if** 2. ise **loop**. Buna göre şekillendireceğiz. 
 
 > **if () {}** if değerlerinin arasında boolen bir değer olur true or false. Yes mi No mu şeklinde. Direkt true ya da false değerleri verebiliriz her zmana yürütür bunu. 
 
-> If yapılarını karşılaştırma ya da mantıksal operatorler ile birlikte kullanacağız. **Karşılaştırma Operatorleri** *==, ===* eşitlik operatoru,  *>, <, >=, <=* , *!, !=, !==*. **Mantıksal Operatorler** ise *&&* and ve *||* or yapılarıdır. & operatoru |operatorunden onceliklidir. 
+> If yapılarını karşılaştırma ya da mantıksal operatorler ile birlikte kullanacağız. **Karşılaştırma Operatorleri** *==, ===* eşitlik operatoru,  *>, <, >=, <=* , *!, !=, !==*. **Mantıksal Operatorler** ise *&&* and ve *||* or yapılarıdır. & operatoru |operatorunden onceliklidir. If koşullarında her zaman ilk baştan yukarıdan aşağı doğru başlar ilerler.
+
+> Boolen değerleri saklayacağımız veri yapılarını öğrendik. Örneğin **let isLoggedIn = true** yapısı. Kullanıcı girişi yoksa *!isLoggedIn* ile yapıyı sağlıyoruz. Ya da bir kullanıcı adı varsa da aynı şekilde çalışır eğer boşsa false döndürür. **let enteredUserName='';** ise 0 yani burası false döndürecektir.  Boş bir karakter bile true döndürür. Yani boş veya 
+
+### Döngüler
+
+> for , for .. of arrayler ile kullanılır. for .. in object içinde döner. Boole değereri ile çalışırsak while döngüsü kullanacağız. for .. of ve for .. in sıkkça kullanılıyor. 
+
+> **for (let i =0; i > 10; i++) {}** if gibi yazılışı var. içerisine let ile başlıyoruz. Mesela çevrimiçi bir oyunda bu kod işimize rastgele bir sayı üretmede lazım olabilir.
+
+> Örneğin kullanıcılara mail gönderreceğiz diziden. Bunu for of ile yapacağız. **for (const user of users) {  }** burada user ile yeni değişken oluşturmuş oluyoruz. Aynı zamanda eskiye uyarlı yazmak istiyorsak **for (let i = 0; i < someArray.length; i++){console.log(someArray[i]);}** yazmamız gerekecek.
+
+> *for in* => **for (const user in users) {console.log(users[user])}** ile verileri çağırabiliriz.
+
+> Sabit bir sayıda veri varsa for döngüsü kullanıyoruz. Şimdi **while** ile sadece bir şartımız var. **while (!isFinished) {isFinished = confirm('Do you want to quit?')}** ile isFinished = true diyerek bir koşul yapabiliriz. Burası bitmeden diğer satırlara geçmez. 
