@@ -464,3 +464,7 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Bir inputun değerini direkt input.value ile alabiliriz.
 
 > querysSelectorAll bize bir dizi döndürür. Biz bu sayede **for of** döngüsünü kulanabiliririz. 
+
+## Day 42 - Milestone Project
+
+> formData verisi çok önemli çok kullancaz new operatoru ile.
