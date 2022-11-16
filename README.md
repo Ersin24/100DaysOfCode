@@ -468,3 +468,11 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 ## Day 42 - Milestone Project
 
 > formData verisi çok önemli çok kullancaz new operatoru ile.
+
+## Day 45 - 3. Parti Paketleri
+
+> **Bootstrap**, **Material UI**, **Tailwind CSS** sayesinde corousel scroolspy ve parallax effect gibi şeylere ulaşabiliriz. Daha az kod yazarız ama bunlar üzerinde daha az kontroloe sahibiz. Hataya daha az açık. Genelde daha büyük projelerde kullanıyoruz. 
+
+> Bootstrap eklerken js dosyasını **defer** ile yine erteleme özelliğini kullanabiliriz. **fixed-top** classı ile navbarı üste sabitledik. 
+
+> **Parallax** efekti için google aramalarına baktık. [simplePARALLAX.js](https://www.simpleparallax.com/) adresinden ulaşıyoruz evraklara. Burada cdn i kopyala yapıştır yapıyoruz. Yine defer özelliği ekliyoruz projeye cdn yüklerken. 
