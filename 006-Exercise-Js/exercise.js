@@ -12,13 +12,13 @@ const secondButtonElement = window.document.querySelector("#change-bg-btn");
 //    - Output the first button by using the variable in which it's stored
 //    - Output the second button WITHOUT using the variable in which it's stored
 
-// function removeParagraph() {
-//     console.dir(firstButtonElement);
-// }
+function removeParagraph() {
+    console.dir(firstButtonElement);
+}
 
-// function changeBackgroundColor(event) {
-//     console.dir(event.target);
-// }
+function changeBackgroundColor(event) {
+    console.dir(event.target);
+}
 
 // firstButtonElement.addEventListener('click', removeParagraph);
 // secondButtonElement.addEventListener('click', changeBackgroundColor);

@@ -16,14 +16,20 @@ function updateRemainingCharacters(event) {
     if(remainingCharacters === 0) {
         remainingCharsElement.classList.add('error');
         productNameInputElement.classList.add('error');
+        remainingCharsElement.classList.remove('warning');
+        productNameInputElement.classList.remove('warning');
+
+        
     } else if (remainingCharacters <= 10) {
         remainingCharsElement.classList.add('warning');
         productNameInputElement.classList.add('warning');
-        remainingCharsElement.classList.add('error');
-        productNameInputElement.classList.add('error');
+        remainingCharsElement.classList.remove('error');
+        productNameInputElement.classList.remove('error');
     } else {
         remainingCharsElement.classList.remove('warning');
+        remainingCharsElement.classList.remove('error');
         productNameInputElement.classList.remove('warning');
+        productNameInputElement.classList.remove('error');
     }
     
    

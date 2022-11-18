@@ -476,3 +476,10 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Bootstrap eklerken js dosyasını **defer** ile yine erteleme özelliğini kullanabiliriz. **fixed-top** classı ile navbarı üste sabitledik. 
 
 > **Parallax** efekti için google aramalarına baktık. [simplePARALLAX.js](https://www.simpleparallax.com/) adresinden ulaşıyoruz evraklara. Burada cdn i kopyala yapıştır yapıyoruz. Yine defer özelliği ekliyoruz projeye cdn yüklerken. 
+
+# Backende Doğru
+
+## Day 46 
+
+> Normalde tarayıcı üzerinde kodlarımız çalışırken artık server üzerinde kodlar yazacağız. Python, PHP, Java C# gibi diller olmasına rağmen şu en populer ***Node.js***. Yeni bir dil öğrenmemize gerek yoktur.
+
