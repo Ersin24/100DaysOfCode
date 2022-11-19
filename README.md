@@ -483,3 +483,10 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Normalde tarayıcı üzerinde kodlarımız çalışırken artık server üzerinde kodlar yazacağız. Python, PHP, Java C# gibi diller olmasına rağmen şu en populer ***Node.js***. Yeni bir dil öğrenmemize gerek yoktur.
 
+## Day 47 - Node JS
+
+> [Node js Current](https://nodejs.org/en/) Current olanı yani en son güncel halini indiriyoruz. Diğeri LTS ise eski kararlı sürümü. Bununla js  kodlarını kullanmaya başlayabiliriz artık. Node js kodu yürüten araçtıkr. [Node dükamanlar](https://nodejs.org/api/) 'a ulaşabiliriz burdan. 
+
+> Burada DOM yok. Js var. Bazı farklılıklar olacakır. Const ve let yine kullanabiliriz. Bunu ilkel olarak MacOs ta terminal yazarak bulacağız. Windowsta ise cmd yazarak bulabiliriz. Zahmetli diye vsc'da yazacağız. Burada ise **aynı dizinde olmak şartıyla** kodumuza **node app.js** ile ulaşıp çalıştırabiliyoruz. **[Cmd başlangç yardım ekranı](https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/)**
+
+> Daha önceden serverda *netlify* ve *live-server* olarak çalışmalar yaptık aslında. Şimdi netlify gibi biz yapacağız. Bize http istekleri almak için doc sayfasında http kısmına bakabiliriz. 
