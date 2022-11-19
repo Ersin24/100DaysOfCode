@@ -490,3 +490,11 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Burada DOM yok. Js var. Bazı farklılıklar olacakır. Const ve let yine kullanabiliriz. Bunu ilkel olarak MacOs ta terminal yazarak bulacağız. Windowsta ise cmd yazarak bulabiliriz. Zahmetli diye vsc'da yazacağız. Burada ise **aynı dizinde olmak şartıyla** kodumuza **node app.js** ile ulaşıp çalıştırabiliyoruz. **[Cmd başlangç yardım ekranı](https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/)**
 
 > Daha önceden serverda *netlify* ve *live-server* olarak çalışmalar yaptık aslında. Şimdi netlify gibi biz yapacağız. Bize http istekleri almak için doc sayfasında http kısmına bakabiliriz. 
+
+# EXPRESS JS
+
+## Day 48 - Express JS Started
+
+> Node js sayesinde 3. parti paketlerini kullanacağız. Yani express.js i. Yine vcs terminalinde olacağız. Öncelikle **npm init** yazacağız. Varsayılan için enter a basacağız genelinde. Bize sonunda bir **JSON** sunar. Json temelde standart bir metin dosyasıdır. Ancak belirli biçimlendirme kurallarına ve JS nesnesine benzeyen bir yapısı vardır. 
+
+> **npm install express** ile kurulumu yapacağız dosyamıza. Node js i arka planda bağlamamızı sağlayacak. Expressin de ihtiyaç duyduğu tüm paketler yüklenecektir. Aynı zamanda package.json dosyasında da bağımlıklıklar girişinde dosyamız eklenmiş olacaktır. node modules silsek bile sonradan npm i ile bunu geri yükleyebiliriz.
