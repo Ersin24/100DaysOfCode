@@ -509,6 +509,9 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 ### Nodemon
 
-> Sürekli manuel olarak yeniden başlatmak yerine ekstra bir paket ekliyoruz. Kod otomatik olarak takip ediyor değişiklikleri. **npm install nodemon --save-dev** ile kurulumu yapacağız. Herhangi bir işlevsellik sunmuyor bize. Değişiklikleri kaydetmeden ilerlememizi sağlayacak. Package.json dosyasında scripts testten sonra virgül koyarak **"start": "nodemon app.js"** yazıp kaydedeceğiz. Şimdi **npm start** diyerek başlatacağız. Şimdi nodemon tarafından destekleniyor ve sürekli kaydedip yeniden bailatmaya gerek yok. 
+> Sürekli manuel olarak yeniden başlatmak yerine ekstra bir paket ekliyoruz. Kod otomatik olarak takip ediyor değişiklikleri. **npm install nodemon --save-dev** ile kurulumu yapacağız. Herhangi bir işlevsellik sunmuyor bize. Değişiklikleri kaydetmeden ilerlememizi sağlayacak. Package.json dosyasında scripts testten sonra virgül koyarak **"start": "nodemon app.js"** yazıp kaydedeceğiz. Şimdi **npm start** ya da **npm run start** diyerek başlatacağız. Şimdi nodemon tarafından destekleniyor ve sürekli kaydedip yeniden bailatmaya gerek yok. 
 
-> 
+
+## EXPRESS PROJESI
+
+> Yolları bulmak için *views* adı altında klasör oluşturuyoruz. Html sayfalarını oraya aktarıyoruz. Dosyaları göndermek için *res.sendFile* gönderiyoruz artık. 
