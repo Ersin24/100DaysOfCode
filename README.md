@@ -512,6 +512,10 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Sürekli manuel olarak yeniden başlatmak yerine ekstra bir paket ekliyoruz. Kod otomatik olarak takip ediyor değişiklikleri. **npm install nodemon --save-dev** ile kurulumu yapacağız. Herhangi bir işlevsellik sunmuyor bize. Değişiklikleri kaydetmeden ilerlememizi sağlayacak. Package.json dosyasında scripts testten sonra virgül koyarak **"start": "nodemon app.js"** yazıp kaydedeceğiz. Şimdi **npm start** ya da **npm run start** diyerek başlatacağız. Şimdi nodemon tarafından destekleniyor ve sürekli kaydedip yeniden bailatmaya gerek yok. 
 
 
-## EXPRESS PROJESI
+## EXPRESS PROJESI -- Çok önemli!!!!
 
 > Yolları bulmak için *views* adı altında klasör oluşturuyoruz. Html sayfalarını oraya aktarıyoruz. Dosyaları göndermek için *res.sendFile* gönderiyoruz artık. 
+
+> Statik dosyaları saklamak için **app.use(express.static('public'))** ile public klasör açıyoruz ve stil script dosyaları içine atıyoruz. 
+
+> Şablon oluşturma motoru **npm i jsc** . Dinamik bir yapı için **<%= numberOfRestaurants %>** veri yapısını kullanıyoruz. Render ederken 2. parametre olarak değişkeni {} arasına yazıp : koyup değere eşitliyoruz. Bu dosya sunucuda ayrıştırılır ve işlenir. Dinamik bir yapıya sahibiz artık. Ayrıca **<% %>** arasına js kodu yazabiliriz. 

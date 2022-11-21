@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ersin Göç",
+    "address": "İsmetpaşa mahallesi 30 ağustos caddesi 70 evler sitesi c blok no 8 d 7 k 3",
+    "cuisine": "Italian",
+    "website": "www://google.com",
+    "description": "fasdfas"
+  },
+  {
+    "name": "Ersin Göç",
+    "address": "İsmetpaşa mahallesi 30 ağustos caddesi 70 evler sitesi c blok d 7 Merkez/Çanakkale",
+    "cuisine": "asdf",
+    "website": "http://www.sadfsa.com",
+    "description": "dsaf"
+  },
+  {
+    "name": "Movie 2",
+    "address": "adsf",
+    "cuisine": "sadf",
+    "website": "http://www.sadfsa.com",
+    "description": "asdfasdf"
+  },
+  {
+    "name": "ERSİN GÖÇ",
+    "address": "İsmetpaşa mahallesi 30 ağustos caddesi 70 evler sitesi c blok d 7",
+    "cuisine": "asdfas",
+    "website": "http://www.sadfsa.coma",
+    "description": "adsfasdf"
+  },
+  {
+    "name": "vuvex",
+    "address": "asdf",
+    "cuisine": "asdf",
+    "website": "http://www.sadfsa.com",
+    "description": "asdf"
+  },
+  {
+    "name": "asdfsad",
+    "address": "asdfsad",
+    "cuisine": "asdfdsa",
+    "website": "http://www.sadfsa.com",
+    "description": "asdfa"
+  }
+]
