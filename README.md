@@ -497,4 +497,18 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Node js sayesinde 3. parti paketlerini kullanacağız. Yani express.js i. Yine vcs terminalinde olacağız. Öncelikle **npm init** yazacağız. Varsayılan için enter a basacağız genelinde. Bize sonunda bir **JSON** sunar. Json temelde standart bir metin dosyasıdır. Ancak belirli biçimlendirme kurallarına ve JS nesnesine benzeyen bir yapısı vardır. 
 
+> Esas olarak yönlendirme istekleriyle ilgilidir. Dosyalara yazabileceğimiz ve okuyabiliceğimizi öğrendik. Manuel olarak kontrol etmiyoruz httpleri artık. Ayrıca nodemone ile işimizi kolaylaştırdık.
+
 > **npm install express** ile kurulumu yapacağız dosyamıza. Node js i arka planda bağlamamızı sağlayacak. Expressin de ihtiyaç duyduğu tüm paketler yüklenecektir. Aynı zamanda package.json dosyasında da bağımlıklıklar girişinde dosyamız eklenmiş olacaktır. node modules silsek bile sonradan npm i ile bunu geri yükleyebiliriz.
+
+## Day 49
+
+> **JSON** dosyası metin verilerini daha okunabilir yapılması için geliştirilmiş formattır. Bu bir js kodu değil normal metindir aslında standartlaştırılmış. Alternatif olarak *xml* de kullanılıyor. Jsonda mutlaka çift tırnak olarak kullanılmalı jsden farklı olarak. ve aynı zamanda key kısımları da tırnaklar arasında yazılmalı ama js'de böyle bir şey söz konusu değil. 
+
+> Node ile artık Form verilerini alıp bir dosyaya kaydedebiliyoruz. 
+
+### Nodemon
+
+> Sürekli manuel olarak yeniden başlatmak yerine ekstra bir paket ekliyoruz. Kod otomatik olarak takip ediyor değişiklikleri. **npm install nodemon --save-dev** ile kurulumu yapacağız. Herhangi bir işlevsellik sunmuyor bize. Değişiklikleri kaydetmeden ilerlememizi sağlayacak. Package.json dosyasında scripts testten sonra virgül koyarak **"start": "nodemon app.js"** yazıp kaydedeceğiz. Şimdi **npm start** diyerek başlatacağız. Şimdi nodemon tarafından destekleniyor ve sürekli kaydedip yeniden bailatmaya gerek yok. 
+
+> 
