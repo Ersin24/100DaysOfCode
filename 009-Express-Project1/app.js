@@ -3,7 +3,7 @@ const path = require("path");
 const express = require("express");
 
 const app = express();
-const uuid = require('uuid');
+const uuid = require("uuid");
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs"); //Burası npm ile yüklediğimiz ejs paketin adı. Dosya adlarını da ejs e çeviriyoruz
@@ -34,8 +34,22 @@ app.get("/restaurants", function (req, res) {
 
 app.get("/restaurants/:id", function (req, res) {
   const restaurantId = req.params.id; //param özelliği ile alıyoruz
-  res.render("restaurant-detail", { rid: restaurantId });
-}); //Dinamik Route
+  const filePath = path.join(__dirname, "data", "restaurants.json");
+
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+
+  for (const restaurant of storedRestaurants) {
+    if (restaurant.id === restaurantId) {
+      return res.render("restaurant-detail", { restaurant: restaurant });
+      //Dinamik Route. Return eklememizin sebebi eğer eşitse burda durduruyoruz. Dışarıya veri aktarmak için değil burası. 
+    }
+  }
+
+  res.status(404).render('404'); //Returnden boş dönerse 404 sayfasına direkt gidecek. Else ile yapmadık yukarda çünkü orda tüm koşulları sağlamıyorudu.
+
+
+});
 
 app.get("/recommend", function (req, res) {
   res.render("recommend");
@@ -43,7 +57,7 @@ app.get("/recommend", function (req, res) {
 
 app.post("/recommend", function (req, res) {
   const restaurant = req.body;
-  restaurant.id = uuid.v4(); //Burada id diye değer oluşturuyor js bizim yerimize. uuid.v4() ile benzersiz id oluşturuyoruz. 
+  restaurant.id = uuid.v4(); //Burada id diye değer oluşturuyor js bizim yerimize. uuid.v4() ile benzersiz id oluşturuyoruz.
   const filePath = path.join(__dirname, "data", "restaurants.json");
 
   const fileData = fs.readFileSync(filePath);
@@ -63,5 +77,15 @@ app.get("/confirm", function (req, res) {
 app.get("/about", function (req, res) {
   res.render("about");
 });
+
+//404(bulunamayan sayfa) Sayfasını tüm isteklerden sonra başlatıyoruz çünkü yukardan aşağı doğru işliyor
+app.use(function(req, res) {
+  res.status(404).render('404');
+})
+
+//500(Server hatası) sayfası için 4 parametre alacak. Burası örneğin yazma okuma dosyalarında çok fazla işlem olduğunda server tarafında bir hata meydana geldiği zaman okunacaktır.
+app.use(function(error, req, res, next){
+  res.status(500).render('500');
+})
 
 app.listen(3000);

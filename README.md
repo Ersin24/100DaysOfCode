@@ -527,3 +527,5 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Dinamik route girişi yaptık. app.get("/restaurants/:id", function (req, res) { const restaurantId = req.params.id; //param özelliği ile alıyoruz res.render("restaurant-detail", { rid: restaurantId }); }); //Dinamik Route yapısını kullanacağız.
 
 > **npm install uuid** İle uniq id için bağımlıklık yüklüyoruz. 
+
+> [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) ..

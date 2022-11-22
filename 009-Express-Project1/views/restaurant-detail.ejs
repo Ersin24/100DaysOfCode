@@ -8,11 +8,11 @@
     <%- include('includes/header') %> 
     <%- include('includes/aside') %>
     <main>
-      <h1>TITLE OF THE RESTAURANT <%= rid %>  </h1>
-      <p>Cuisine | Addres</p>
-      <p>Description of the restaurant</p>
+      <h1> <%= restaurant.name %>  </h1>
+      <p><%= restaurant.cuisine %>  | <%= restaurant.address %> </p>
+      <p><%= restaurant.description %> </p>
       <p>
-        <a href="">View Wevsite</a>
+        <a href="<%= restaurant.website %> ">View Wevsite</a>
       </p>
     </main>
   </body>
