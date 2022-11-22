@@ -3,6 +3,7 @@ const path = require("path");
 const express = require("express");
 
 const app = express();
+const uuid = require('uuid');
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs"); //Burası npm ile yüklediğimiz ejs paketin adı. Dosya adlarını da ejs e çeviriyoruz
@@ -31,16 +32,18 @@ app.get("/restaurants", function (req, res) {
   });
 });
 
+app.get("/restaurants/:id", function (req, res) {
+  const restaurantId = req.params.id; //param özelliği ile alıyoruz
+  res.render("restaurant-detail", { rid: restaurantId });
+}); //Dinamik Route
+
 app.get("/recommend", function (req, res) {
-  //   const htmlFilePath = path.join(__dirname, "views", "recommend.html");
-
-  //   res.sendFile(htmlFilePath);
-
   res.render("recommend");
 });
 
 app.post("/recommend", function (req, res) {
   const restaurant = req.body;
+  restaurant.id = uuid.v4(); //Burada id diye değer oluşturuyor js bizim yerimize. uuid.v4() ile benzersiz id oluşturuyoruz. 
   const filePath = path.join(__dirname, "data", "restaurants.json");
 
   const fileData = fs.readFileSync(filePath);
@@ -54,17 +57,10 @@ app.post("/recommend", function (req, res) {
 });
 
 app.get("/confirm", function (req, res) {
-  //   const htmlFilePath = path.join(__dirname, "views", "confirm.html");
-
-  //   res.sendFile(htmlFilePath);
-
   res.render("confirm");
 });
 
 app.get("/about", function (req, res) {
-  //   const htmlFilePath = path.join(__dirname, "views", "about.html");
-
-  //   res.sendFile(htmlFilePath);
   res.render("about");
 });
 

@@ -518,4 +518,12 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Statik dosyaları saklamak için **app.use(express.static('public'))** ile public klasör açıyoruz ve stil script dosyaları içine atıyoruz. 
 
-> Şablon oluşturma motoru **npm i jsc** . Dinamik bir yapı için **<%= numberOfRestaurants %>** veri yapısını kullanıyoruz. Render ederken 2. parametre olarak değişkeni {} arasına yazıp : koyup değere eşitliyoruz. Bu dosya sunucuda ayrıştırılır ve işlenir. Dinamik bir yapıya sahibiz artık. Ayrıca **<% %>** arasına js kodu yazabiliriz. 
+> Şablon oluşturma motoru **npm i jsc** . Dinamik bir yapı için **<%= numberOfRestaurants %>** veri yapısını kullanıyoruz. Render ederken 2. parametre olarak değişkeni {} arasına yazıp : koyup değere eşitliyoruz. Bu dosya sunucuda ayrıştırılır ve işlenir. Dinamik bir yapıya sahibiz artık. Veriyi çekeren **<%= %>** ile verileri alabiliriz. Ayrıca **<% %>** arasına for if gibi kodları yazabiliriz. yazabiliriz. Buralarda input içerisine html kodu yazılsa dahi ejs güvenli şekilde ayrıştıracaktır. 
+
+> include ile parçalara ayıracağız. **<%- %>** yapısı bize yardımcı olacak. 
+
+> EJS IDE excentions indirdik artık daha rahat biçimlendirme yapacağız. Kodu manuel olarak biçimlendircek prettier kullanmayacağız. 
+
+> Dinamik route girişi yaptık. app.get("/restaurants/:id", function (req, res) { const restaurantId = req.params.id; //param özelliği ile alıyoruz res.render("restaurant-detail", { rid: restaurantId }); }); //Dinamik Route yapısını kullanacağız.
+
+> **npm install uuid** İle uniq id için bağımlıklık yüklüyoruz. 
