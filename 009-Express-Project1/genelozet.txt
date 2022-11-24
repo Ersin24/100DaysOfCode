@@ -1,0 +1,38 @@
+"Dinamik Rotalar "daki Rota Parametreleri
+Bu bölümde, URL yolundan dinamik değerler çıkarmak için rota parametrelerini kullanan "dinamik rotalar" hakkında bilgi edindiniz.
+
+Örneğin:
+
+router.get('/restaurants/:id', ...)
+Bu örnekte id, bu URL / yol ziyaret edildiğinde farklı değerler tutacak bir rota parametresidir. Örneğin, bir kullanıcı /restaurants/r1 adresine girerse, id r1'e eşit olacaktır.
+
+Rota parametreleri, somut rota parametresi değerine bağlı olarak farklı verileri yüklemek için tek bir rota kullanmamıza izin verdiği için çok kullanışlıdır.
+
+Rota parametresinin (:id yukarıdaki örnekte) URL yolunun önemli bir parçası olduğunu anlamak önemlidir. Örneğin sadece /restaurants yukarıdaki rota tarafından işlenmeyecektir - çünkü rota parametresi için bir değer eksiktir.
+
+Sorgu Parametreleri
+Bu bölümde ayrıca "sorgu parametreleri" adı verilen bir kavramı da öğrendik.
+
+"Sorgu parametreleri" ile "rota parametrelerini" karıştırmak kolaydır, ancak bunlar farklı sorunları çözen temelde farklı kavramlardır.
+
+"Rota parametreleri" (yukarıya bakın) isteğe bağlı DEĞİLDİR ve rota tanımının önemli bir parçasıdır (yani, rota parametresi için herhangi bir değer sağlanmazsa yük aktif hale gelmez), "sorgu parametreleri" ise tamamen isteğe bağlıdır!
+
+"Sorgu parametreleri" genellikle bir URL yoluna ekstra bilgi eklemek için kullanılır.
+
+Örneğin:
+
+/restaurants?order=asc
+Burada "order" sorgu parametresi "asc" değeriyle eklenmiştir (sorgu parametreleri her zaman "ana yol "dan ? sembolüyle ayrılır).
+
+Kutunun dışında, bir sorgu parametresi hiçbir şey yapmaz!
+
+Bir web sitesinin ziyaretçileri bunlardan istediğiniz kadar ekleyebilir. Bunları bağlantılar aracılığıyla veya önceki derste gösterildiği gibi bir GET isteği aracılığıyla bir form göndererek ekleyebilirsiniz (bir yan not olarak: Bir GET formu yerine, önceki derste bir sorgu parametresi içeren bir bağlantı da oluşturabilirdik - ancak gizli giriş alanları fikrini tanıtmak istedim).
+
+Sunucu tarafında bazı ekstra işler yapmak için böyle bir isteğe bağlı sorgu parametresini işleyebilecek kod eklemek size, geliştiriciye bağlıdır - örneğin, bir dizideki öğelerin sıralamasını değiştirebilir (son derste gösterildiği gibi), öğeleri filtreleyebilir veya başka herhangi bir şey yapabilirsiniz.
+
+Rota Parametreleri vs Sorgu Parametreleri
+Yukarıda açıklandığı gibi, sorgu parametreleri isteğe bağlıdır ve rota yolunun önemli bir parçası DEĞİLDİR, diğer yandan rota parametreleri öyledir!
+
+Rota parametreleri hangi rotanın aktif olması gerektiğini belirlemek için kullanılır ve daha sonra rota parametresinin somut değerini (örneğin bir restoran kimliği) elde etmek için rotanın içinde ayrıştırılabilirler.
+
+Öte yandan sorgu parametreleri isteğe bağlıdır ve genellikle hangi rotanın çalıştırılacağını belirlemek için kullanılmazlar - bunun yerine yüklenen bir rotaya / URL'ye ekstra bilgi eklemek için kullanılabilirler.

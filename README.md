@@ -529,3 +529,6 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > **npm install uuid** İle uniq id için bağımlıklık yüklüyoruz. 
 
 > [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) ..
+
+> Tüm backend kullanacağımız parçaları *util* klasörde topluyoruz. 
+

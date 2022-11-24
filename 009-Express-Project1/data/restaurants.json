@@ -1,10 +1,1 @@
-[
-  {
-    "name": "Meraklı",
-    "address": "Çanakkale Merkez",
-    "cuisine": "Çanakkale",
-    "website": "https://www.merakli.com",
-    "description": "Yemekleri idare eder.",
-    "id": "d09f0d5d-02c1-4ad3-8255-48f4642f7221"
-  }
-]
+[{"name":"Meraklı","address":"Çanakkale Merkez","cuisine":"Çanakkale","website":"https://www.merakli.com","description":"Yemekleri idare eder.","id":"d09f0d5d-02c1-4ad3-8255-48f4642f7221"},{"name":"Antalya","address":"Çanakkale Merkez","cuisine":"Çanakkale","website":"https://www.merakli.com","description":"Yemekleri idare eder.","id":"d09f0d5d-02c1-4ad3-8255-48f4642f7221"},{"name":"Zonguldak","address":"Çanakkale Merkez","cuisine":"Çanakkale","website":"https://www.merakli.com","description":"Yemekleri idare eder.","id":"d09f0d5d-02c1-4ad3-8255-48f4642f7221"},{"name":"Ersin","address":"asdf","cuisine":"sadf","website":"https://www.merakli.com","description":"asdf","id":"6ddcaaf3-a2ae-45e1-ad0d-f728f2132172"}]
