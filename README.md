@@ -532,3 +532,10 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 
 > Tüm backend kullanacağımız parçaları *util* klasörde topluyoruz. 
 
+## Day 54 - Gelişmiş Javascirpt Kavramlarının Açıklanması
+
+> Try catch yapılarını gördük. Tüm sayfayı hata varmış gibi göstermek yerine hata olabilecek yerlere try cath ile yakalıyoruz. Her şeyi try catch bloguna yazmıyoruz ama. Daha çok geliştirme aşamasında bunları yapıyoruz.
+
+> Scoping(Kapsam belirleme): Değişkenlerin ve sabitlerin ve fonksiyonların sadece belirli yerlerde kullanılması durumudur. Sadece tanımladımığımz yerde mevcuttur. 
+
+> new Date() gibi class sınıflarını gördük. Bunu çağırırken de new ClassAdı olarak çağırcağız. This oluşturalacak nesneyi ifade eder. 

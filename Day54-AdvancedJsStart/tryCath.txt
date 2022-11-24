@@ -1,0 +1,10 @@
+Hata oluştuğunda, her zaman bu hata hakkında daha fazla bilgi içeren bazı veriler (genellikle bir nesne) alırsınız (örneğin, bir mesaj ve hataya yol açan adımlar dizisi).
+
+Bu nesneyi/veriyi şu şekilde ele geçirebilirsiniz:
+
+function doSomething() {
+    // do something ...
+    throw { message: 'Something went wrong! };
+}
+
+Bu biraz daha gelişmiş bir yöntemdir ancak sonuçta tüm bu yerleşik fonksiyonlar ve metotlar bir hataya neden olurlarsa bunu yaparlar.
