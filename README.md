@@ -539,3 +539,7 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Scoping(Kapsam belirleme): Değişkenlerin ve sabitlerin ve fonksiyonların sadece belirli yerlerde kullanılması durumudur. Sadece tanımladımığımz yerde mevcuttur. 
 
 > new Date() gibi class sınıflarını gördük. Bunu çağırırken de new ClassAdı olarak çağırcağız. This oluşturalacak nesneyi ifade eder. 
+
+> Asenkronda kodun okunup bitmesini beklemez. Başlar ve devam eder. örneğin dosya okuma işleminde olduğu gibi. Bir dosya okumak, vertitabanı işlemleri, http istekleri her zaman zaman alan uygulamardır. 
+
+## Day 57 - Onwards To Databases
