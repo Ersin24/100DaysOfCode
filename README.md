@@ -543,3 +543,19 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > Asenkronda kodun okunup bitmesini beklemez. Başlar ve devam eder. örneğin dosya okuma işleminde olduğu gibi. Bir dosya okumak, vertitabanı işlemleri, http istekleri her zaman zaman alan uygulamardır. 
 
 ## Day 57 - Onwards To Databases
+
+> Sürekli dosyaya veri yazma işlemleri (CRUD) sistemi yoracağı için daha optimal seçenek olan database ile işlemlerimizi yapmamız gerek. İki tür veri tabanı var. 1. SQL(ilişkisel veri tabanı) 2. NoSQL (İlişkisel olmayan veri tabanı).
+
+> Sql: İç içe geçmiş veri türü yok. Açıkça tanımlanmış şemalara sahibiz. Her şema için bir masamız var yani. Bu da sorgulama yapmamızı kolaşlaştırıyor.
+
+> NoSql: Çok sayıda tablo ile çalışmak yerine bir kaç tablo ile çalışır. Verileri örneğin JSON ile saklıyoruz. Tek bir sorgu ile tüm verileri çekebiliyoruz. Daha az karmaşık ama veri boyutu daha büyük. Satırlar ve sütunlar mantığı yoktur. Bir tabloda saklanan veriler vardır.
+
+> İkisinin de kullanıldığı web siteleri de var. Çok büyük ölçekli web sitelerinde veri saklamak için daha çok NoSql kullanlıyour. 
+
+# SQL
+
+> MySql en popüeri kullanmak için . PostgreSql de ücretsiz.Microsoft Sql ücretli.
+
+> [MySql Installer](https://dev.mysql.com/downloads/installer/) ile indirip kurulumu yapacağız. (Düşük parti indiriyoruz. )
+
+> **CREATE DATABASE `database_adi`** ile database oluşturabiliriz. Büyük harf kullanmak gelenektir.
