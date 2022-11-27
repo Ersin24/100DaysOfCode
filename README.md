@@ -573,3 +573,19 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > **UPDATE restaurants SET name = 'İzmir' WHERE id = 1** id 1 olanı name güncelleriz. 
 
 > **DELETE FROM restaurants WHERE id = 1**  ile silme işlemleri yaparız. 
+
+## Day 59 (SQL DEVAM)
+
+> Daha uzun metin türleri örneğin yorum gibi **TEXT** olabilir.
+
+> Tarih için datatype **DATETIME** ve ayrıca default/expression kısmı **CURRENT_TIMESTAMP** . Tarih için elle ekleme yapmıyoruz artık kendisi ekliyor çünkü. Ekleme yaparken id gibi boş bırakacağız. 
+
+> **SELECT * FROM restaurants INNER JOIN addresses ON (restaurants.address_id = addresses.id)** BURADA İLİŞKİSELTABLOLARI BİRBİRİNE EKLEYEREK GÖSTERİYORUZ. Daha ayrıntılı **SELECT restaurants.name, addresses.* FROM restaurants INNER JOIN addresses ON (restaurants.address_id = addresses.id)** diyebiliriz. **SELECT  restaurants.id, restaurants.name, addresses.* FROM restaurants INNER JOIN addresses ON (restaurants.address_id = addresses.id)** gibi. **SELECT  restaurants.id, restaurants.name, addresses.*, types.name FROM restaurants INNER JOIN addresses ON (restaurants.address_id = addresses.id) INNER JOIN types ON restaurants.type_id = types.id WHERE addresses.city = 'Munich'**
+
+> **SELECT reviews.*, restaurants.name AS restaurant_name, addresses.*, types.name AS restaurant_type FROM reviews
+INNER JOIN restaurants ON reviews.restaurant_id = restaurants.id
+INNER JOIN addresses ON restaurants.address_id = addresses.id
+INNER JOIN types ON restaurants.type_id = types.id
+WHERE rating > 3**
+
+> SQL'de önemli olan ilişkisel veritabanı tablolar arası.
