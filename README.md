@@ -559,3 +559,17 @@ Label ve value etkileşimi söz konusu. Aralarında mantıksal bağlantı varsa 
 > [MySql Installer](https://dev.mysql.com/downloads/installer/) ile indirip kurulumu yapacağız. (Düşük parti indiriyoruz. )
 
 > **CREATE DATABASE `database_adi`** ile database oluşturabiliriz. Büyük harf kullanmak gelenektir.
+
+## Day 58 - SQL
+
+> Table oluştururken yine küçük harflerle yazıyoruz. Birden fazla kelimede alt çizgi kullanacağız.  
+
+> INT - sayılar için, VARCHAR() - kısa isim veya adresler gibi, DECIMAL - ondalık basamaklar fiyatlar gibi, DATETIME tarih ve saat, DATE zaman olmadan tarih, FLOAT, BOOLEAN doğru yanlış. id'leri INT ile saklıyoruz. PK işaretliyoruz primary key (1incil anahtar), NN boş olamayacağı anlamına gelir, AI her kayıt eklendiğinde id yi kendi başımıza ayarlamamız gerekmez.
+
+> name adı versek VARCHAR(255) maksimum karakkter ayarlayabiliriz. NN işaretleiyoruz. boş olamsın diye. type adı versek yine aynı şeyleri yapabiliriz. 
+
+> **INSERT INTO restaurants (name, type) VALUES ('Web Dev Mealery', 'German')** ile yeni veriler ekliyoruz. Geri getirmek için **SELECT * FROM restaurants** (*) her şeyi seçer.Flasa bastığımızda sonucu görüyoruz. Filtrelersek devamında **WHERE type  = 'German' AND name = 'w'** ile filtreleyebiliriz. AND veya OR gibi kullanabiliriz. Örneğin sadece name alanında sorgulama istiyorusak **SELECT name FROM restaurants WHERE type = 'German'** ya da name,type da diyebiliriz. **SELECT COUNT( * ) FROM restaurants WHERE type = 'German'** ile sayıları alabiliriz. Ya da **SUM( * )** ile toplamını bulabiliriz. 
+
+> **UPDATE restaurants SET name = 'İzmir' WHERE id = 1** id 1 olanı name güncelleriz. 
+
+> **DELETE FROM restaurants WHERE id = 1**  ile silme işlemleri yaparız. 
