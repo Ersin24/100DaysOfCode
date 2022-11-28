@@ -589,3 +589,7 @@ INNER JOIN types ON restaurants.type_id = types.id
 WHERE rating > 3**
 
 > SQL'de önemli olan ilişkisel veritabanı tablolar arası.
+
+## Day 60 - NodeJS ExpressJS ve MySQL
+
+> Backendde veritabanına bağlanmasının sebebi tarayıcında çalıştığında kodları değiştirebilmesidir. Çünkü backenddeki kodu görüntüleyemezler. 
