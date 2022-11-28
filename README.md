@@ -593,3 +593,19 @@ WHERE rating > 3**
 ## Day 60 - NodeJS ExpressJS ve MySQL
 
 > Backendde veritabanına bağlanmasının sebebi tarayıcında çalıştığında kodları değiştirebilmesidir. Çünkü backenddeki kodu görüntüleyemezler. 
+
+## Day 61 - Veritabanı bağlantısı ve proje
+
+> node mysql2 paketini kullanacağız. **npm install --save mysql2** ile kurulumu yapacağız. Bağlantı kurmamızı sağlayacak. Data klasöründe database.js dosyasında bağlantıyı kuracağız. **const mysql = require('mysql2')** sonrasında **const pool = mysql.createPool({
+    host: 'localhost',
+    database: 'blog',
+    user: 'root',
+    password: 'Eg145723.'
+});** ile bağlantı havuzu oluşturuyoruz **module.exports = pool** ile veriyi dışarı aktarıyoruz. 
+
+## Day 62 - Proje devamı
+
+> #body {
+  white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */ } Bununla tarayıcı varsayılanı kırıp yazdığımız text metinlerini göstermiş oluyoruz güzel olarak.
+
+  
