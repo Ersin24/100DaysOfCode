@@ -631,3 +631,15 @@ WHERE rating > 3**
   > **db.restaurants.find({ name: "Ersin Göç"})** özel arama.
 
   > **db.restaurants.find({}, {address:1})** Örneğin burda address verisini getiriyoruz sadece. Ama id bilgisi de geliyor. **db.restaurants.find({}, {address:1, _id:0})** burda da addressi getiriyor ve id getirmiyor. **db.restaurants.find({ name: "Ersin Göç"})** eşleşen tüm berileri getirir. **db.restaurants.findOne({ name: "Ersin Göç"})** Sadece ilk eşleşeni getirir. 
+
+  > `db.restaurants.updateOne({_id: ObjectId("63876671e23c47cf31b0e858")}, {$set: {"address.streetNumber": 12} })` **update işlemi**
+
+  > deleteOne ya da deleteMany kullanacağız. ilk eşleşeni ya da hepsini sileriz. ` db.restaurants.deleteOne({ _id: ObjectId("638765eee23c47cf31b0e857") }) ` **delete işlemi**. `db.restaurants.deleteMany({})` bütün her şeyi siler.
+
+  > ` db.restaurants.insertOne( { name: "Berlin BurgerHouse", address: { street: "Hamstreet", streetNumber: "212", postalCode: 1251, city: "Milan", country: "Italy"  }, type: { typeId: ObjectId("6387b50be23c47cf31b0e85a"), name: "American"} }) ` **iç içe veri ekleme**
+
+  >  **date verileri için** [mongo db date](https://www.mongodb.com/docs/manual/reference/method/Date/)
+
+  > gt: greather than gte: greather than equeal lt: lower than, lte: lower than equal . Bunlar sorgulama yaparken işe yarıyor. `db.reviews.find( {rating: { $gt: 2  } }  ) `Burası 2'den büyük olduğunu gösteriyor bize. [mongo db query operators](https://www.mongodb.com/docs/manual/reference/operator/query/). `db.reviews.find({ $and: [{rating: {$gt: 1}}, {rating: {$lt:3}} ] } )` Burası 1 den büyük 3 ten küçük değerler. çoklu değer.
+
+  > 
