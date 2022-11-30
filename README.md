@@ -608,4 +608,26 @@ WHERE rating > 3**
 > #body {
   white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */ } Bununla tarayıcı varsayılanı kırıp yazdığımız text metinlerini göstermiş oluyoruz güzel olarak.
 
-  
+  ## Day 63 - NoSql & MongoDB
+
+  > Önceden tablolar yapmamıza gerek yok. Sözde collection lar var.Temel olarak veri kaplarıdır. İçinde document var ve js nesnelerine benziyor. Key value değerleri var. Satırlar ve sütunlarla çalışmayız koleksiyonlarla çalışırız. Tüm table'ı planlamak zorunda değiliz burda. Genellikle ilgili verileri aynı yerde saklarız. NoSQL de daha fazla esneklik var. Çok büyük uygulamalarda esneklik bize performansa mal olabilir. Bunları deneyime göre bakacağız. 
+
+  > MongoDb kullanacağız ücretsiz populer. 
+
+  > [mongo db for windows](https://www.mongodb.com/try/download/community) ile mongodb kurabiliriz.
+
+  > Hizmetler kısmından yine açıp kapayabiliriz. 
+
+  > [mongo db shell](https://www.mongodb.com/try/download/shell) Sonrasında bu shell programını kuracağız. 
+
+  > **show dbs** ile databeseleri görüntülüyoruz.
+
+  > **use database_adi** ile yeni bir db oluşturuyoruz.
+
+  > **db.restaurants.insertOne( { name: "Munich Schinzethosue", address: {street:"Some Street 5", streetNumber: "23b" }  } )** Veri ekleme
+
+  > **db.restaurants.find()** tüm verileri bulma
+
+  > **db.restaurants.find({ name: "Ersin Göç"})** özel arama.
+
+  > **db.restaurants.find({}, {address:1})** Örneğin burda address verisini getiriyoruz sadece. Ama id bilgisi de geliyor. **db.restaurants.find({}, {address:1, _id:0})** burda da addressi getiriyor ve id getirmiyor. **db.restaurants.find({ name: "Ersin Göç"})** eşleşen tüm berileri getirir. **db.restaurants.findOne({ name: "Ersin Göç"})** Sadece ilk eşleşeni getirir. 
