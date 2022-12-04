@@ -650,4 +650,4 @@ WHERE rating > 3**
 
   > Burada client-side ve server-side kısmımız var.
 
-  > Çoklu veri dosyası için **multer** kullanacağız. Express için yazılmıştır. Githubta kullanımı var. ` npm i --save multer ` ile kurulumu yapacağız. 
+  > Çoklu veri dosyası için **multer** kullanacağız. Express için yazılmıştır. Githubta kullanımı var. ` npm i --save multer ` ile kurulumu yapacağız. [multer github](https://github.com/expressjs/multer) Resmi dökümantasyon. 
