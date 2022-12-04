@@ -643,3 +643,11 @@ WHERE rating > 3**
   > gt: greather than gte: greather than equeal lt: lower than, lte: lower than equal . Bunlar sorgulama yaparken işe yarıyor. `db.reviews.find( {rating: { $gt: 2  } }  ) `Burası 2'den büyük olduğunu gösteriyor bize. [mongo db query operators](https://www.mongodb.com/docs/manual/reference/operator/query/). `db.reviews.find({ $and: [{rating: {$gt: 1}}, {rating: {$lt:3}} ] } )` Burası 1 den büyük 3 ten küçük değerler. çoklu değer.
 
   > [mongodb nodejs](https://www.mongodb.com/docs/drivers/node/current/quick-start/) sitesinden bakabiliriz. **Bağlanmak için** `npm i mongodb` ile başlıyoruz. 
+
+# FILE UPLOAD
+
+  ## Day 67
+
+  > Burada client-side ve server-side kısmımız var.
+
+  > Çoklu veri dosyası için **multer** kullanacağız. Express için yazılmıştır. Githubta kullanımı var. ` npm i --save multer ` ile kurulumu yapacağız. 
