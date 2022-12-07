@@ -659,6 +659,10 @@ WHERE rating > 3**
 
  >  Ajax: Eşzamansız js ve xml anlamına gelir. Blog sayfalarında admin sayfalarında her türlü kullanabiliriz. 3. parti paketlerler kullanacağız. **axios** gibi. Şuan Xml yerine JSON formatını kullanıyoruz. Aslında xml kullanmaa sebebi makine tarafından okunabilir olması. Json da okunur ama key value değerleri vardır. Json text formatıdır. İç içe veriler eklenebiilir. Biz **fetch()** yerleşik işlevini kullanacağız. Daha modern olduğu için
 
- ## Day 69
+ > Put : Sunucudaki bazı veriler güncellenir veya değiştirilir. Patch: puta benziyor. Delete: silme methodu. Ajax istekleri bunlar
 
- > 
+# Session and Cookies
+
+ ## Day 70
+
+ > Sosyal medya sitesi, online mağaza, admin web sitesi gibi şeylerde kimlik doğrulaması isteyebiliriz.  dsf
