@@ -671,6 +671,8 @@ WHERE rating > 3**
 
  > **Session** : Server-side , **Cookie** : Client-side
 
- > Session için `npm i express-session` paketini kuracağız. Store içeriğini yönetmek için `npm i connect-mongodb-session` kullanacağız. [mongodb session connect](https://www.npmjs.com/package/connect-mongodb-session)
+ > Session için `npm i express-session` paketini kuracağız. Store içeriğini yönetmek için `npm i connect-mongodb-session` kullanacağız. [mongodb session connect](https://www.npmjs.com/package/connect-mongodb-session).
+
+ > Daha adetaylı cookie için **cookie parser** kullanabiliriz. `npm i cookie-parser` [cookie parser](https://www.npmjs.com/package/cookie-parser)
 
  
