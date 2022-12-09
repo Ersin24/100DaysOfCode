@@ -665,4 +665,12 @@ WHERE rating > 3**
 
  ## Day 70
 
- > Sosyal medya sitesi, online mağaza, admin web sitesi gibi şeylerde kimlik doğrulaması isteyebiliriz.  dsf
+ > Sosyal medya sitesi, online mağaza, admin web sitesi gibi şeylerde kimlik doğrulaması isteyebiliriz.  
+
+ > Şifreleri saklarken hashleyerek saklayacağız. Çünkü herhangi bir çalınma durumunda bu şifre email kombinasyonlarıyla başka sitelere de ulaşılabilir. Şifreleme yapmak için ` npm i bcryptjs ` ile kurulumu yapacağız. [bcryptjs npm](https://www.npmjs.com/package/bcryptjs) 
+
+ > **Session** : Server-side , **Cookie** : Client-side
+
+ > Session için `npm i express-session` paketini kuracağız. Store içeriğini yönetmek için `npm i connect-mongodb-session` kullanacağız. [mongodb session connect](https://www.npmjs.com/package/connect-mongodb-session)
+
+ 
