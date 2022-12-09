@@ -41,9 +41,9 @@ router.post("/signup", async function (req, res) {
     .collection("users")
     .findOne({ email: enteredEmail });
 
-  if(existingUser){
-    console.log('User exists already');
-    return res.redirect('/signup');
+  if (existingUser) {
+    console.log("User exists already");
+    return res.redirect("/signup");
   }
 
   //Aldığımız veriyi şifreliyoruz.
@@ -87,14 +87,28 @@ router.post("/login", async function (req, res) {
     return res.redirect("/login");
   }
 
-  console.log("User is authenticated!");
-  res.redirect("/admin");
+  //Oturumuna veri ekliyoruz
+  req.session.user = { id: existingUser._id, email: existingUser.email };
+  req.session.isAuthenticated = true;
+  req.session.save(function () {
+    console.log("User is authenticated!");
+    res.redirect("/admin");
+  });
 });
-
+//Geliştirici altında application kısmında cookies leri görebiliriz.
+//db.sessions.find() ile databasede verileri görebilirim. Mongodb session sayesinde verileri kaydediyor db ye
 router.get("/admin", function (req, res) {
+  //Check the user "ticket"
+  if(!req.session.isAuthenticated){
+    return res.status(401).render('401');
+  }
   res.render("admin");
 });
 
-router.post("/logout", function (req, res) {});
+router.post("/logout", function (req, res) {
+  req.session.user = null;
+  req.session.isAuthenticated = false;
+  res.redirect('/');
+});
 
 module.exports = router;

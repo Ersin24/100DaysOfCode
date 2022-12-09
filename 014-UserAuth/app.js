@@ -27,7 +27,11 @@ app.use(session({
   secret: 'super-secret',
   resave: false,
   saveUninitialized: false,
-  store: sessionStore
+  store: sessionStore,
+  //Eğer oturumu belli bir sürede sonlandırmak istiyorsak kullanacağız bu yapıyı.
+  // cookie: {
+  //   maxAge: 30 * 24 * 60 * 60 * 1000
+  // }
 }));
 
 app.use(demoRoutes);
