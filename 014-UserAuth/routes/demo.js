@@ -61,7 +61,7 @@ router.post("/signup", async function (req, res) {
 
     req.session.inputData = {
       hasError: true,
-      message: "Could not log you in please check your credentials",
+      message: "Invalid input - please check your data.",
       email: enteredEmail,
       confirmEmail: enteredConfirmEmail,
       password: enteredPassword,
@@ -141,7 +141,7 @@ router.post("/login", async function (req, res) {
   if (!passwordsAreEqual) {
     req.session.inputData = {
       hasError: true,
-      message: "User existss already!",
+      message: "Could not log you in - please check your credentials!",
       email: enteredEmail,
       password: enteredPassword,
     };
