@@ -675,4 +675,6 @@ WHERE rating > 3**
 
  > Daha adetaylı cookie için **cookie parser** kullanabiliriz. `npm i cookie-parser` [cookie parser](https://www.npmjs.com/package/cookie-parser)
 
- 
+ ## Day 73 
+
+ > **Admin özelliği vermek için** `db.users.updateOne({_id: ObjectId("....")}, {$set: {isAdmin: true}})` gibi veritabanında elle yazıyoruz . Bu sadece o id tanımlıda çıkacaktır.
