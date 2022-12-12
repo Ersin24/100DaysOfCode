@@ -12,14 +12,17 @@ router.get('/discussion', async function (req, res) {
   let filter = '';
 
   if (req.query.author) {
-    filter = `WHERE author = "${req.query.author}"`; 
+    // filter = `WHERE author = "${req.query.author}"`; // DROP TABLE comments WHERE author ="manu => dersek tablomuzu silerler. Sql injection atarlar
+    filter = `WHERE author = ?`;
   }
 
-  const query = `SELECT * FROM comments ${filter}`;
+  // const query = `SELECT * FROM comments ${filter}`; 
 
+  const query = `SELECT * FROM comments ${filter}`;
+  
   console.log(query);
 
-  const [comments] = await db.query(query);
+  const [comments] = await db.query(query, [req.query.author] ); //Soru işareti kısmını buraya ekledik
 
   res.render('discussion', { comments: comments });
 });

@@ -698,3 +698,11 @@ WHERE rating > 3**
  > googleda express sanitize user input ile arama yapıyoruz
 
  > `npm i xss` kuracağız. [xss npm](https://www.npmjs.com/package/xss)
+
+## Day 75
+
+> MySql injection kaçmak için her zaman ? kullanacağız. 
+
+> NoSql korumalı zaten bir şey yapmamıza gerek yok
+
+> inputları mutlaka strelize edeceğeğiz ya da temizlik yapacağız.
