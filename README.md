@@ -678,3 +678,23 @@ WHERE rating > 3**
  ## Day 73 
 
  > **Admin özelliği vermek için** `db.users.updateOne({_id: ObjectId("....")}, {$set: {isAdmin: true}})` gibi veritabanında elle yazıyoruz . Bu sadece o id tanımlıda çıkacaktır.
+
+ ## Day 74
+
+ > **CSRF SALDIRI MODELİ** Arka uca gönderilen istek ile başlar. Başka kötü niyetli birinin özellikle email ile kişiye istek atıp sahte vebsitesinde verilerin çalınması işlemi aslında. 
+ 
+ > projedeki bağımlılıkları yükledikten sonra 8000 de çalışan port da var. 
+ 
+ > Buna karşı çıkmak için `npm i csurf` paketini indiriyoruz. 
+
+ > express csruf ile googleda arama yapıyoruz
+
+ > [npm csruf paket](https://www.npmjs.com/package/csrf-csrf?activeTab=readme)
+
+ > **XSS SALDIRI MODELİ** JS kodunun enjekte edilmesi ile oluşuyor.
+
+ > Kullanıcı girişi olan her yere <% = > dememiz gerekiyor ya da xss paketini kullanacağız.
+
+ > googleda express sanitize user input ile arama yapıyoruz
+
+ > `npm i xss` kuracağız. [xss npm](https://www.npmjs.com/package/xss)
