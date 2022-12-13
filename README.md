@@ -711,3 +711,5 @@ WHERE rating > 3**
 
 > Refactoring yapacağız örneğin kullanıcı doğrulama olanı ayrı yerde post'ları ayrı yerde depolayacağız. 
 
+# Online Shop
+
