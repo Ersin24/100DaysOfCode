@@ -706,3 +706,8 @@ WHERE rating > 3**
 > NoSql korumalı zaten bir şey yapmamıza gerek yok
 
 > inputları mutlaka strelize edeceğeğiz ya da temizlik yapacağız.
+
+# Writing good coode MVC PATTERN
+
+> Refactoring yapacağız örneğin kullanıcı doğrulama olanı ayrı yerde post'ları ayrı yerde depolayacağız. 
+
