@@ -7,10 +7,9 @@ const router = express.Router();
 //Yolları yaptığımızda function burda tanımlamıyoruz contrellers'de tanımlıyourz
 router.get('/signup', authController.getSignup);
 
+router.post('/signup', authController.signup)
+
 router.get('/login', authController.getLogin);
-
-
-
 
 
 

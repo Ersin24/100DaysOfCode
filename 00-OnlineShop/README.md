@@ -5,3 +5,5 @@
 3. Görünüm motoru için ejs kuruyoruz. `npm i ejs`. App.js üzerinde kullanmak için gerekli kodu yazdık. Views altında auth klasörünün içine login.ejs ve signup.ejs dosyalarını koyduk. Ejs te çalışırken incule görmüştük onu kullanacağız. ortak olan dosyalar için. views klaösrünü admin ve customer olarak ayırıyoruz şimdi. Includes klasörünü customer içersine attık. 
 
 4. Public klasörünü style sayfaları ve script sayfaları için oluşturduk. Her dosyada bütün css dosyalarını çağırmıyourz çünkü bu aynı zamanda bize performans sorununu getirirdi.
+
+5. Mongodb bağlantısı için **data** klasörünü oluşturduk ve `npm i mongodb`paketini kullanıyoruz.
