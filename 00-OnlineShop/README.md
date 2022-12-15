@@ -2,3 +2,4 @@
 
 2. Models, views ve controllers klasörlerini oluşturuyoruz. Views klasörü altında admin, auth(kullanıcı girişleri), cart(alışveriş sepeti) ve products(ürünler) klasörü oluşturuyoruz. Ana klasörde routes ile yolları oluşturacağımız klasörü oluşturuyoruz. Kimlik doğrulamayla ilgili rotayı tutması için auth.routes.js dosyasını oluşturuyoruz. Bir uzantı değil sadece ismi. 
 
+3. Görünüm motoru için ejs kuruyoruz. `npm i ejs`. App.js üzerinde kullanmak için gerekli kodu yazdık. Views altında auth klasörünün içine login.ejs ve signup.ejs dosyalarını koyduk. Ejs te çalışırken incule görmüştük onu kullanacağız. ortak olan dosyalar için. views klaösrünü admin ve customer olarak ayırıyoruz şimdi. Includes klasörünü customer içersine attık. 
