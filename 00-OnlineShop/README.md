@@ -7,3 +7,5 @@
 4. Public klasörünü style sayfaları ve script sayfaları için oluşturduk. Her dosyada bütün css dosyalarını çağırmıyourz çünkü bu aynı zamanda bize performans sorununu getirirdi.
 
 5. Mongodb bağlantısı için **data** klasörünü oluşturduk ve `npm i mongodb`paketini kullanıyoruz.
+
+6. `npm i bcryptjs` parolayı kriptolamak için kurduk
