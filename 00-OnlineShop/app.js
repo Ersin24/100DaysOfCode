@@ -1,8 +1,12 @@
 const path = require("path");
+
 const express = require("express");
+//CSURF
+const csrf = require('csurf');
 
 const db = require("./data/database");
-
+//CSURF MIDDLEWARE TOKEN
+const addCsrfTokenMiddleware = require('./middlewares/csrf-token')
 // ./ bulunduğumuz konuma bakıyor
 const authRoutes = require("./routes/auth.routes");
 
@@ -16,6 +20,10 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));
 //Url verilerini almak için eklmemiz gerekli
 app.use(express.urlencoded({ extended: false }));
+
+//CSURF MIDDLEWARE
+app.use(csrf());
+app.use(addCsrfTokenMiddleware);
 
 app.use(authRoutes);
 

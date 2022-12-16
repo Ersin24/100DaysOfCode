@@ -9,3 +9,5 @@
 5. Mongodb bağlantısı için **data** klasörünü oluşturduk ve `npm i mongodb`paketini kullanıyoruz.
 
 6. `npm i bcryptjs` parolayı kriptolamak için kurduk
+
+7 [npm tiny-csrf](https://www.npmjs.com/package/tiny-csrf) kursta ise `npm i csurf` kullanıyoruz. Gerçekte yukardaki adresi baz al.
