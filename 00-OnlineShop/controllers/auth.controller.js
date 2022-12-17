@@ -7,7 +7,7 @@ function getSignup(req, res) {
 }
 
 //Buradaki fonskiyon için özellikle app.js üzerinde urlencoded yazıyoruz
-async function signup(req, res) {
+async function signup(req, res, next) {
   //gelen verileri req.body ile alıyoruz
   const user = new User(
     req.body.email,
@@ -18,7 +18,12 @@ async function signup(req, res) {
     req.body.city
   );
 
-  await user.signup();
+  try {
+    await user.signup();
+  } catch (error) {
+    next(error);
+    return;
+  }
 
   res.redirect("/login");
 }
@@ -27,9 +32,15 @@ function getLogin(req, res) {
   res.render("customer/auth/login");
 }
 
-async function login(req, res) {
+async function login(req, res, next) {
   const user = new User(req.body.email, req.body.password);
-  const existingUser = await user.getUserWithSameEmail();
+   let existingUser;
+  try {
+    existingUser = await user.getUserWithSameEmail();
+  }catch (error){
+    next(error);
+    return;
+  }
 
   if (!existingUser) {
     res.redirect("/login");
