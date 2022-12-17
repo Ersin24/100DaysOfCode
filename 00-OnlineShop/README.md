@@ -10,4 +10,6 @@
 
 6. `npm i bcryptjs` parolayı kriptolamak için kurduk
 
-7 [npm tiny-csrf](https://www.npmjs.com/package/tiny-csrf) kursta ise `npm i csurf` kullanıyoruz. Gerçekte yukardaki adresi baz al.
+7. [npm tiny-csrf](https://www.npmjs.com/package/tiny-csrf) kursta ise `npm i csurf` kullanıyoruz. Gerçekte yukardaki adresi baz al.
+
+8. `npm i express-session` ve `npm i connect-mongodb-session` ile oturum yönetmek için paketleri kuruyoruz. 

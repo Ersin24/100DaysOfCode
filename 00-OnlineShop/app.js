@@ -3,7 +3,12 @@ const path = require("path");
 const express = require("express");
 //CSURF
 const csrf = require("csurf");
+//Express sesssion paketi
+const expressSession = require('express-session');
 
+//Session
+const createSessionConfig = require('./config/session');
+//Database
 const db = require("./data/database");
 //CSURF MIDDLEWARE TOKEN
 const addCsrfTokenMiddleware = require("./middlewares/csrf-token");
@@ -23,6 +28,10 @@ app.use(express.static("public"));
 //Url verilerini almak için eklmemiz gerekli
 app.use(express.urlencoded({ extended: false }));
 
+const sessionConfig = createSessionConfig();
+
+//Csurf öncesinde session kullanmamız gerekli
+app.use(expressSession(sessionConfig));
 //CSURF MIDDLEWARE
 app.use(csrf());
 app.use(addCsrfTokenMiddleware);
