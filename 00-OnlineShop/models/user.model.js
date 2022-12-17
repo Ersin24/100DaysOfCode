@@ -15,6 +15,11 @@ class User {
         }
     }
 
+    //Email karşılaştırma
+    getUserWithSameEmail(){
+        return db.getDb().collection('users').findOne({ email: this.email})
+    }
+
     async signup(){
         //2. parametre uzunluğu gösteriyor
         const hashedPassword = await bcrypt.hash(this.password, 12);
@@ -25,6 +30,11 @@ class User {
             name: this.name,
             address: this.address
         });
+    }
+
+    //Şifre karşılaştırma
+    hasMatchingPassword(hashedPassword){
+        return bcrypt.compare(this.password, hashedPassword)
     }
 }
 
