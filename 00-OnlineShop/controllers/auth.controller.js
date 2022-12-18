@@ -1,6 +1,7 @@
 const User = require("../models/user.model");
 //Util
 const authUtil = require("../util/authentication");
+const validation = require("../util/validation");
 
 function getSignup(req, res) {
   res.render("customer/auth/signup");
@@ -8,6 +9,22 @@ function getSignup(req, res) {
 
 //Buradaki fonskiyon için özellikle app.js üzerinde urlencoded yazıyoruz
 async function signup(req, res, next) {
+  //User validation check
+  if (
+    !validation.userDetailsAreValid(
+      req.body.email,
+      req.body.password,
+      req.body.fullname,
+      req.body.street,
+      req.body.postal,
+      req.body.city
+    ) ||
+    !validation.emailIsConfirmed(req.body.email, req.body["confirm-email"])
+  ) {
+    res.redirect("/signup");
+    return;
+  }
+
   //gelen verileri req.body ile alıyoruz
   const user = new User(
     req.body.email,
@@ -19,6 +36,13 @@ async function signup(req, res, next) {
   );
 
   try {
+    //Var olan email ile kullanıcı
+    const existsAlready = await user.existsAlready();
+    if (existsAlready) {
+      res.redirect("/signup");
+      return;
+    }
+
     await user.signup();
   } catch (error) {
     next(error);
@@ -34,10 +58,10 @@ function getLogin(req, res) {
 
 async function login(req, res, next) {
   const user = new User(req.body.email, req.body.password);
-   let existingUser;
+  let existingUser;
   try {
     existingUser = await user.getUserWithSameEmail();
-  }catch (error){
+  } catch (error) {
     next(error);
     return;
   }
