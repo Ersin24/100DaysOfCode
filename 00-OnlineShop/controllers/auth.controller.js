@@ -2,6 +2,7 @@ const User = require("../models/user.model");
 //Util
 const authUtil = require("../util/authentication");
 const validation = require("../util/validation");
+const sessionFlash = require("../util/session-flash");
 
 function getSignup(req, res) {
   res.render("customer/auth/signup");
@@ -9,6 +10,15 @@ function getSignup(req, res) {
 
 //Buradaki fonskiyon için özellikle app.js üzerinde urlencoded yazıyoruz
 async function signup(req, res, next) {
+  const enteredData = {
+    email: req.body.email,
+    password: req.body.password,
+    fullname: req.body.fullname,
+    street: req.body.street,
+    postal: req.body.postal,
+    city: req.body.city,
+  };
+
   //User validation check
   if (
     !validation.userDetailsAreValid(
@@ -21,7 +31,17 @@ async function signup(req, res, next) {
     ) ||
     !validation.emailIsConfirmed(req.body.email, req.body["confirm-email"])
   ) {
-    res.redirect("/signup");
+    //Şimdi hatalı verileri flashlayacağız
+    sessionFlash.flashDataToSession(
+      req,
+      {
+        errorMessage: "Please check your input",
+        ...enteredData,
+      },
+      function () {
+        res.redirect("/signup");
+      }
+    );
     return;
   }
 
@@ -39,7 +59,17 @@ async function signup(req, res, next) {
     //Var olan email ile kullanıcı
     const existsAlready = await user.existsAlready();
     if (existsAlready) {
-      res.redirect("/signup");
+      //Tekrar flaslıyoruz var olan kullanıcıyı kullancı deneyimi için
+      sessionFlash.flashDataToSession(
+        req,
+        {
+          errorMessage: "User exists already!",
+          ...enteredData,
+        },
+        function () {
+          res.redirect("/signup");
+        }
+      );
       return;
     }
 
@@ -66,8 +96,18 @@ async function login(req, res, next) {
     return;
   }
 
+  const sessionErrorData = {
+    errorMessage:
+      "Invalid credentials - please double-check your email and password!",
+    email: user.email,
+    password: user.password,
+  };
+
   if (!existingUser) {
-    res.redirect("/login");
+    //Kullancıı yoksa verileri kaybetmesin diye tekrar flashlıyoruz. Burada sadece 2 veri ile işimiz var giriş yapıyoruz çünkü
+    sessionFlash.flashDataToSession(req, sessionErrorData, function () {
+      res.redirect("/login");
+    });
     return;
   }
 
@@ -76,7 +116,9 @@ async function login(req, res, next) {
   );
 
   if (!passwordIsCorrect) {
-    res.redirect("/login");
+    sessionFlash.flashDataToSession(req, sessionErrorData, function () {
+      res.redirect("/login");
+    });
     return;
   }
 
