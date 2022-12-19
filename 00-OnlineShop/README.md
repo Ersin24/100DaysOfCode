@@ -13,3 +13,5 @@
 7. [npm tiny-csrf](https://www.npmjs.com/package/tiny-csrf) kursta ise `npm i csurf` kullanıyoruz. Gerçekte yukardaki adresi baz al.
 
 8. `npm i express-session` ve `npm i connect-mongodb-session` ile oturum yönetmek için paketleri kuruyoruz. 
+
+9. `db.users.updateOne({ _id: ObjectId("639f70b3494515a3171be200")}, { $set: {isAdmin: true} })` ile admini veritabınında flag ekliyoruz
