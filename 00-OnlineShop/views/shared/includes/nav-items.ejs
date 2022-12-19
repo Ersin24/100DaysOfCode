@@ -1,0 +1,48 @@
+<ul class="nav-items">
+  <!-- Admin değilse -->
+  <% if (!locals.isAdmin) { %>
+  <li>
+    <a href="/">Shop</a>
+  </li>
+  <li>
+    <a href="/cart">Cart</a>
+  </li>
+  <% } %>
+
+  <!-- Kullanıcılar varsa ve admin değilse -->
+  <% if (locals.isAuth && !locals.isAdmin) { %>
+  <li>
+    <a href="/orders">Orders</a>
+  </li>
+  <% } %>
+
+  <!-- Kullanıcı admin ise  -->
+  <% if (locals.isAdmin) { %>
+  <li>
+    <a href="/admin/products">Manage Products</a>
+  </li>
+  <li>
+    <a href="/admin/orders">Manage Orders</a>
+  </li>
+  <% } %>
+
+  <!-- Kullancıı yoksa herkes görebilsin -->
+  <% if (!locals.isAuth) { %>
+  <li>
+    <a href="/signup">Signup</a>
+  </li>
+  <li>
+    <a href="/login">Login</a>
+  </li>
+  <% } %>
+
+  <!-- Kullanıcılar varsa -->
+  <% if (locals.isAuth) { %>
+  <li>
+    <form action="/logout" method="POST">
+      <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>" />
+      <button>Logout</button>
+    </form>
+  </li>
+  <% } %>
+</ul>
