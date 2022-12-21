@@ -21,6 +21,7 @@ const checkAuthStatusMiddleware = require("./middlewares/check-auth");
 const authRoutes = require("./routes/auth.routes");
 const productsRoutes = require("./routes/products.routes");
 const baseRoutes = require("./routes/base.routes");
+const adminRoutes = require('./routes/admin.routes')
 
 const app = express();
 
@@ -42,9 +43,11 @@ app.use(csrf());
 app.use(addCsrfTokenMiddleware);
 app.use(checkAuthStatusMiddleware)
 
+//Use Routes
 app.use(baseRoutes);
 app.use(authRoutes);
 app.use(productsRoutes);
+app.use('/admin', adminRoutes) //Admin route olarak filtreleme yapıyor
 
 app.use(errorHandleMiddleware);
 
