@@ -15,3 +15,5 @@
 8. `npm i express-session` ve `npm i connect-mongodb-session` ile oturum yönetmek için paketleri kuruyoruz. 
 
 9. `db.users.updateOne({ _id: ObjectId("639f70b3494515a3171be200")}, { $set: {isAdmin: true} })` ile admini veritabınında flag ekliyoruz
+
+10. `npm i --save multer` ile çoklu dosya gönderimini yapacağız. Dosyalara uniqe isim için ise `npm i uuid` paketi yüklüyoruz
