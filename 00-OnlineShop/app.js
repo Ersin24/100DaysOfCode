@@ -21,7 +21,7 @@ const checkAuthStatusMiddleware = require("./middlewares/check-auth");
 const authRoutes = require("./routes/auth.routes");
 const productsRoutes = require("./routes/products.routes");
 const baseRoutes = require("./routes/base.routes");
-const adminRoutes = require('./routes/admin.routes')
+const adminRoutes = require("./routes/admin.routes");
 
 const app = express();
 
@@ -31,6 +31,7 @@ app.set("views", path.join(__dirname, "views"));
 
 //Static files
 app.use(express.static("public"));
+app.use('/products/assets', express.static("product-data"));
 //Url verilerini almak için eklmemiz gerekli
 app.use(express.urlencoded({ extended: false }));
 
@@ -41,13 +42,13 @@ app.use(expressSession(sessionConfig));
 //CSURF MIDDLEWARE
 app.use(csrf());
 app.use(addCsrfTokenMiddleware);
-app.use(checkAuthStatusMiddleware)
+app.use(checkAuthStatusMiddleware);
 
 //Use Routes
 app.use(baseRoutes);
 app.use(authRoutes);
 app.use(productsRoutes);
-app.use('/admin', adminRoutes) //Admin route olarak filtreleme yapıyor
+app.use("/admin", adminRoutes); //Admin route olarak filtreleme yapıyor
 
 app.use(errorHandleMiddleware);
 
