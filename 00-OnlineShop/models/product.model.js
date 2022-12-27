@@ -1,11 +1,12 @@
-const mongodb = require("mongodb");
-const db = require("../data/database");
+const mongodb = require('mongodb');
+
+const db = require('../data/database');
 
 class Product {
   constructor(productData) {
     this.title = productData.title;
     this.summary = productData.summary;
-    this.price = +productData.price; //Number a zorluyoruz
+    this.price = +productData.price;
     this.description = productData.description;
     this.image = productData.image; // the name of the image file
     this.updateImageData();
@@ -22,14 +23,13 @@ class Product {
       error.code = 404;
       throw error;
     }
-
     const product = await db
       .getDb()
-      .collection("products")
+      .collection('products')
       .findOne({ _id: prodId });
 
     if (!product) {
-      const error = new Error("Could not find product with provieded id");
+      const error = new Error('Could not find product with provided id.');
       error.code = 404;
       throw error;
     }
@@ -37,9 +37,8 @@ class Product {
     return new Product(product);
   }
 
-  //static oluyor burası
   static async findAll() {
-    const products = await db.getDb().collection("products").find().toArray();
+    const products = await db.getDb().collection('products').find().toArray();
 
     return products.map(function (productDocument) {
       return new Product(productDocument);
@@ -67,16 +66,18 @@ class Product {
         delete productData.image;
       }
 
-      await db
-        .getDb()
-        .collection("products")
-        .updateOne({ _id: productId }, { $set: productData });
+      await db.getDb().collection('products').updateOne(
+        { _id: productId },
+        {
+          $set: productData,
+        }
+      );
     } else {
-      await db.getDb().collection("products").insertOne(productData);
+      await db.getDb().collection('products').insertOne(productData);
     }
   }
 
-  async replaceImage(newImage) {
+  replaceImage(newImage) {
     this.image = newImage;
     this.updateImageData();
   }

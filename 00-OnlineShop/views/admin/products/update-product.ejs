@@ -1,16 +1,10 @@
-<!-- Includes edeceğiz burda ham kodun hepsini alıyoruz -->
-<%- include('../../shared/includes/head', {pageTitle: 'Update Product'}) %> 
+<%- include('../../shared/includes/head', { pageTitle: 'Update product' }) %>
 <link rel="stylesheet" href="/styles/forms.css">
 </head>
 <body>
-    <%- include('../../shared/includes/header') %> 
-
-    <main>
-        <h1>Update product</h1>
-        <%- include('includes/product-form', {submitPath: '/admin/products' + product.id, product: product, imageRequired: false}) %> 
-       
-    </main>
-
-  
-
-<%- include('../../shared/includes/footer') %> 
+  <%- include('../../shared/includes/header') %>
+  <main>
+    <h1>Update Product</h1>
+    <%- include('includes/product-form', { submitPath: '/admin/products/' + product.id, product: product, imageRequired: false }) %>
+  </main>
+<%- include('../../shared/includes/footer') %>

@@ -1,22 +1,18 @@
-const express = require("express");
+const express = require('express');
 
-const adminController = require("../controllers/admin.controller");
-imageUploadMiddleware = require("../middlewares/image-upload");
+const adminController = require('../controllers/admin.controller');
+const imageUploadMiddleware = require('../middlewares/image-upload');
 
 const router = express.Router();
 
-router.get("/products", adminController.getProducts); // /admin/products diyoruz aslında app.js sayesinde
+router.get('/products', adminController.getProducts); // /admin/products
 
-router.get("/products/new", adminController.getNewProducts);
+router.get('/products/new', adminController.getNewProduct);
 
-router.post(
-  "/products",
-  imageUploadMiddleware,
-  adminController.createNewProduct
-);
+router.post('/products', imageUploadMiddleware, adminController.createNewProduct);
 
-router.get("/products/:id", adminController.getUpdateProduct);
+router.get('/products/:id', adminController.getUpdateProduct);
 
-router.post("products/:id", imageUploadMiddleware, adminController.updateProduct);
+router.post('/products/:id', imageUploadMiddleware, adminController.updateProduct);
 
 module.exports = router;
