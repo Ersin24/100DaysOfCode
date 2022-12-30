@@ -68,7 +68,8 @@ async function deleteProduct(req, res, next){
     return next(error)
   }
 
-  res.redirect('/admin/products');
+  // res.redirect('/admin/products'); //Ajax işlemi yaptığımız için burda yönlendirme yapmayacağız
+  res.json({ message: 'Deleted Product! '});
 }
 
 
