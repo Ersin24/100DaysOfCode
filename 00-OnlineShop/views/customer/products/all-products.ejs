@@ -1,13 +1,19 @@
 <!-- Includes edeceğiz burda ham kodun hepsini alıyoruz -->
 <%- include('../../shared/includes/head', {pageTitle: 'All Products'}) %> 
+<link rel="stylesheet" href="/styles/products.css">
 </head>
 <body>
     <%- include('../../shared/includes/header') %> 
 
     <main>
         <h1>All Products</h1>
-        <p>A list of products...</p>
-       
+        <ul id="products-grid">
+            <% for (const product of products) { %>
+                <li>
+                <%- include('../../shared/includes/product-item', { product: product }) %>
+                </li> 
+           <% } %> 
+        </ul>
     </main>
 
   
