@@ -1,11 +1,19 @@
-const Order = require("../models/order.model");
-const User = require("../models/user.model");
+const Order = require('../models/order.model');
+const User = require('../models/user.model');
 
-function getOrders(req, res){
-    res.render('customer/orders/all-orders')
+async function getOrders(req, res, next) {
+  try {
+    const orders = await Order.findAllForUser(res.locals.uid);
+    res.render('customer/orders/all-orders', {
+      orders: orders,
+    });
+  } catch (error) {
+    next(error);
+  }
 }
 
 async function addOrder(req, res, next) {
+
   const cart = res.locals.cart;
 
   let userDocument;
@@ -24,12 +32,12 @@ async function addOrder(req, res, next) {
     return;
   }
 
-  req.session.cart = null; //Tüm verileri temizliyoruz
+  req.session.cart = null;
 
-  res.redirect("/orders");
+  res.redirect('/orders');
 }
 
 module.exports = {
   addOrder: addOrder,
-  getOrders: getOrders
+  getOrders: getOrders,
 };
