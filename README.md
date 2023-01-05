@@ -713,3 +713,16 @@ WHERE rating > 3**
 
 # Online Shop
 
+
+
+# Deploying
+
+> Googla da static hosting provider ya da node.js hosting provider gibi yazıp statik veya dinamik olarak hosting bakabiliriz. 
+
+> nosql için mongodb atlası kullanacağız gerçek sitede.
+
+> Resim gibi dosyalar varsa bunu **cloudinary** ile yapabiliriz. 
+
+> css destekleri için **can i use** sitesini kullanabiliriz
+
+> seo için description eklesek yeterli aynı zamanda title da.  
