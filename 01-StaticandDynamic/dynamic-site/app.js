@@ -5,6 +5,12 @@ const express = require('express');
 const db = require('./data/database');
 const mainRoutes = require('./routes/main.routes');
 
+let port = 3000;
+
+if (process.env.PORT){
+  port = process.env.PORT;
+}
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -21,7 +27,7 @@ app.use(function(error, req, res, next) {
 
 db.initDatabase()
   .then(function () {
-    app.listen(3000);
+    app.listen(port);
   })
   .catch(function (error) {
     console.log('Connecting to the database failed!');
