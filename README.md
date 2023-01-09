@@ -633,3 +633,6 @@ WHERE rating > 3**
 > dynamic web site için heroku kullanacağız. [heroku 64bit down](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up) . `heroku login` ile dosya yolundayken giriş yapacağız. 
 
 >  [mongodb](https://account.mongodb.com/account/login) 
+
+> [js compass](https://www.toptal.com/developers/javascript-minifier)
+
