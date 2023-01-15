@@ -7,7 +7,7 @@
     <title>Todos</title>
     <link rel="stylesheet" href="styles/main.css" />
     <!-- <script src="scripts/todos.js" defer></script> -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="/000-Vue/scripts/app.js" defer></script>
   </head>
   <body>
@@ -25,15 +25,16 @@
         </form>
       </section>
       <section id="todos">
-        <p v-if="todos.length=== 0">New todos added yet - maybe start adding some?</p>
+        <p v-if="todos.length=== 0 && !isLoading">New todos added yet - maybe start adding some?</p>
+        <p v-else-if="isLoading">Loading</p>
         <ul v-else id="todos-list">
           <li v-for="todo in todos">
             <p>
               {{ todo.text }}
             </p>
             <div>
-              <button>Edit</button>
-              <button>Delete</button>
+              <button @click="startEditTodo(todo.id)">Edit</button>
+              <button @click="deleteTodo(todo.id)">Delete</button>
             </div>
           </li>
         </ul>
